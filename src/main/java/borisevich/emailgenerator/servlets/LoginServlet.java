@@ -1,4 +1,4 @@
-package borisevich.emailgenerator;
+package borisevich.emailgenerator.servlets;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,7 +12,7 @@ import java.io.IOException;
  * Created by Leonid on 24.08.2016.
  */
 @WebServlet("/login")
-public class Login extends HttpServlet {
+public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if(req.getParameter("username").equals("test") && req.getParameter("password").equals("test")){

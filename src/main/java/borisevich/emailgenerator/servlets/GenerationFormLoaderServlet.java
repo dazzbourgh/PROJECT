@@ -1,4 +1,4 @@
-package borisevich.emailgenerator;
+package borisevich.emailgenerator.servlets;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

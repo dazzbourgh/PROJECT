@@ -1,4 +1,4 @@
-package borisevich.emailgenerator;
+package borisevich.emailgenerator.functional;
 
 public class Email{
     private String addressee;
