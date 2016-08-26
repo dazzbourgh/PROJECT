@@ -16,7 +16,7 @@ public class Login extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if(req.getParameter("username").equals("test") && req.getParameter("password").equals("test")){
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/redirect.jsp");
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/generation");
             requestDispatcher.forward(req, resp);
         }
         else{
