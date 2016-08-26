@@ -22,7 +22,7 @@ public class GenerateServlet extends HttpServlet {
         String[] adresses = new String[5];
         DBConnector dbConnector = new DBConnector();
         Generator generator = new Generator();
-        
+
         generator.generateMails(adresses, trackInfoString);
     }
 }

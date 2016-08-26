@@ -29,6 +29,7 @@ public class Generator{
         return returnValue;
     }
     public Email[] generateMails(String[] addressees, String context){
+        Map<String, String> trackInfo = processTrackInfo(context);
         Email[] emails = new Email[addressees.length];
         for(int i = 0; i < addressees.length; i++){
             emails[i].setAddressee(addressees[i]);
