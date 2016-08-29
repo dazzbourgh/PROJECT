@@ -14,7 +14,7 @@ public class Generator{
             "link"
     };
     //getLabels
-    Map<String, String> processTrackInfo(String trackInfoString){
+    Map<String, String> processTrackInfo(String trackInfoString) throws NullPointerException{
         for(String s : KEYWORDS) {
             if (!trackInfoString.contains(s)){
                 throw new NullPointerException();
@@ -28,7 +28,7 @@ public class Generator{
         }
         return returnValue;
     }
-    public Email[] generateMails(String[] addressees, String context){
+    public Email[] generateMails(String[] addressees, String context) throws NullPointerException{
         Map<String, String> trackInfo = processTrackInfo(context);
         Email[] emails = new Email[addressees.length];
         for(int i = 0; i < addressees.length; i++){

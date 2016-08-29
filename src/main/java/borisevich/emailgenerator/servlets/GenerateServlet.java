@@ -4,6 +4,7 @@ import borisevich.emailgenerator.db.DBConnector;
 import borisevich.emailgenerator.functional.Generator;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,6 +15,7 @@ import java.util.Map;
 /**
  * Created by Leonid on 26.08.2016.
  */
+@WebServlet("/generate")
 public class GenerateServlet extends HttpServlet {
 
     @Override
@@ -22,7 +24,11 @@ public class GenerateServlet extends HttpServlet {
         String[] adresses = new String[5];
         DBConnector dbConnector = new DBConnector();
         Generator generator = new Generator();
+        try {
+            generator.generateMails(adresses, trackInfoString);
+        } catch (NullPointerException e){
 
-        generator.generateMails(adresses, trackInfoString);
+        }
+        req.getSession().invalidate();
     }
 }

@@ -14,8 +14,5 @@
             Password: <input type="password" name="password"/><br/>
             <input type="submit" />
         </form>
-        <font color="red"><c:if test="${not empty param.errMsg}">
-            <c:out value="${param.errMsg}" />
-            </c:if></font>
     </body>
 </html>

@@ -57,5 +57,19 @@
   </dependencies>
   <build>
     <finalName>borisevich.emailgenerator</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+          <url>http://localhost:8080/manager/text</url>
+          <server>TomcatServer</server>
+          <username>upload</username>
+          <password>password</password>
+          <path>/borisevich.emailgenerator</path>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
