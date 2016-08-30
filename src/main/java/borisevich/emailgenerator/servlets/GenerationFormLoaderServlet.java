@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by Leonid on 25.08.2016.
  */
-@WebServlet("/generation")
+@WebServlet("/generationFormLoader")
 public class GenerationFormLoaderServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

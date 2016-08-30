@@ -16,9 +16,9 @@ public class AuthFilter implements Filter {
     }
 
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-
-        HttpServletRequest req = (HttpServletRequest) servletRequest;
 /*
+        HttpServletRequest req = (HttpServletRequest) servletRequest;
+
         if(!req.getSession().getAttribute("isLoggedIn").equals("true")){
             req.getRequestDispatcher("/generation").forward(req, servletResponse);
         }
