@@ -23,6 +23,7 @@ public class LoginServlet extends HttpServlet {
     public void init() throws ServletException {
         super.init();
         logger = Logger.getLogger(LoginServlet.class.getName());
+        DBConnector.setPoolProperties();
     }
 
     //TODO: fix checkAuth
@@ -52,7 +53,7 @@ public class LoginServlet extends HttpServlet {
             logger.debug("ERROR: SQLException");
             return false;
         }
-        logger.debug("User not found");
+        logger.info("User not found");
         return false;
     }
     @Override

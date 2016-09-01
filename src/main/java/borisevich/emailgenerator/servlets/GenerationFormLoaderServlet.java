@@ -1,5 +1,8 @@
 package borisevich.emailgenerator.servlets;
 
+import borisevich.emailgenerator.db.DBConnector;
+import org.apache.log4j.Logger;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,16 +20,23 @@ import java.util.List;
  */
 @WebServlet("/generationFormLoader")
 public class GenerationFormLoaderServlet extends HttpServlet {
+    final Logger logger = Logger.getLogger(GenerationFormLoaderServlet.class.getName());
+
+    //TODO: add db support
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String[] labels = new String[5];
-        List<String> labelsList = new ArrayList<String>(5);
-
-        for(int i = 0; i < labels.length; i++) {
-            labels[i] = "label " + i;
-            labelsList.add(labels[i]);
+        DBConnector dbConnector = new DBConnector();
+        try {
+            ResultSet rs = dbConnector.executeStatement("SELECT * FROM LABELS");
+            List<String> labelsList = new ArrayList<String>();
+            while(rs.next()){
+                labelsList.add(rs.getString("label"));
+            }
+            rs.close();
+            req.setAttribute("labelsList", labelsList);
+        } catch (SQLException e) {
+            logger.error("Error while retrieving labels list from DB");
         }
-        req.setAttribute("labelsList", labelsList);
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/generation.jsp");
         requestDispatcher.forward(req, resp);
     }
