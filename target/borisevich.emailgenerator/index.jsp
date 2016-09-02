@@ -12,7 +12,13 @@
         <form action="login" method="POST">
             Username: <input type="text" name="username"/><br/>
             Password: <input type="password" name="password"/><br/>
-            <input type="submit" />
+            <input type="submit" value="Login"/>
+        </form>
+        <form action="register.jsp" method="GET">
+            <c:set var="isLoginIncorrect" value="${false}" scope="request"/>
+            <c:set var="isLoginUsed" value="${false}" scope="request"/>
+            <c:set var="isPasswordIncorrect" value="${false}" scope="request"/>
+            <input type="submit" value="Register"/>
         </form>
     </body>
 </html>

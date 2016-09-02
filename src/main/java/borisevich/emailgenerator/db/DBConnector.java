@@ -2,7 +2,6 @@ package borisevich.emailgenerator.db;
 
 import org.apache.log4j.Logger;
 
-import java.io.Closeable;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.*;
@@ -35,6 +34,7 @@ public class DBConnector implements AutoCloseable{
         // Register JDBC driver
         try {
             Class.forName("com.mysql.jdbc.Driver");
+            DBConnector.setPoolProperties();
             LOGGER.info("Registered JDBC driver successfully");
         }catch(ClassNotFoundException e){
             LOGGER.info("Failed to register JDBC driver: " + e.getMessage());
@@ -81,6 +81,7 @@ public class DBConnector implements AutoCloseable{
         return resultSet;
     }
 
+    @Override
     public void close(){
         try {
             resultSet.close();

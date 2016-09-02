@@ -23,7 +23,6 @@ public class LoginServlet extends HttpServlet {
     public void init() throws ServletException {
         super.init();
         logger = Logger.getLogger(LoginServlet.class.getName());
-        DBConnector.setPoolProperties();
     }
 
     boolean checkAuth(HttpServletRequest req){
@@ -41,7 +40,7 @@ public class LoginServlet extends HttpServlet {
             if (rs.getString("username") != null) {
                 req.getSession().setAttribute("isLoggedIn", "true");
                 logger.debug("User logged: " + rs.getString("username"));
-                dbConnector.close();
+                //dbConnector.close();
                 return true;
             }
             //dbConnector.close();
