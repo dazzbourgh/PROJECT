@@ -2,6 +2,7 @@ package borisevich.emailgenerator.db;
 
 import org.apache.log4j.Logger;
 
+import java.io.Closeable;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.*;
@@ -13,7 +14,7 @@ import org.apache.tomcat.jdbc.pool.PoolProperties;
  * Created by Leonid on 23.08.2016.
  */
 
-public class DBConnector {
+public class DBConnector implements AutoCloseable{
     static final Logger LOGGER = Logger.getLogger(DBConnector.class.getName());
     // JDBC driver name and database URL
     static final String JDBC_DRIVER="com.mysql.jdbc.Driver";
@@ -80,9 +81,13 @@ public class DBConnector {
         return resultSet;
     }
 
-    public void close() throws SQLException{
-        resultSet.close();
-        statement.close();
-        connection.close();
+    public void close(){
+        try {
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (SQLException e) {
+            LOGGER.error("Failed to close DB connection");
+        }
     }
 }

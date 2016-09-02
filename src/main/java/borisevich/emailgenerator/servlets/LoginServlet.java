@@ -26,11 +26,10 @@ public class LoginServlet extends HttpServlet {
         DBConnector.setPoolProperties();
     }
 
-    //TODO: fix checkAuth
     boolean checkAuth(HttpServletRequest req){
         logger.debug("Checking auth");
-        try {
-            DBConnector dbConnector = new DBConnector();
+        try(DBConnector dbConnector = new DBConnector()) {
+
             ResultSet rs = dbConnector.executeStatement("SELECT * " +
                     "FROM USERS " +
                     "WHERE username=\'" + req.getParameter("username") +
@@ -45,12 +44,12 @@ public class LoginServlet extends HttpServlet {
                 dbConnector.close();
                 return true;
             }
-            dbConnector.close();
+            //dbConnector.close();
         } catch (NullPointerException e){
             logger.debug("ERROR: NullPointerException");
             return false;
         } catch (SQLException e){
-            logger.debug("ERROR: SQLException");
+            logger.debug("ERROR: Empty result set");
             return false;
         }
         logger.info("User not found");
