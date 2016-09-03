@@ -25,12 +25,11 @@ public class GenerationFormLoaderServlet extends HttpServlet {
     //TODO: add db support
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        DBConnector dbConnector = new DBConnector();
-        try {
-            ResultSet rs = dbConnector.executeStatement("SELECT * FROM LABELS");
+        try (DBConnector dbConnector = new DBConnector()){
+            ResultSet rs = dbConnector.executeStatement("SELECT * FROM addresses");
             List<String> labelsList = new ArrayList<String>();
             while(rs.next()){
-                labelsList.add(rs.getString("label"));
+                labelsList.add(rs.getString("address"));
             }
             rs.close();
             req.setAttribute("labelsList", labelsList);
