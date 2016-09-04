@@ -81,12 +81,22 @@ public class DBConnector implements AutoCloseable{
         return resultSet;
     }
 
+    public int executeUpdate(String sqlCommand) throws SQLException{
+        connection = datasource.getConnection();
+        // Execute SQL query
+        statement = connection.createStatement();
+        return statement.executeUpdate(sqlCommand);
+    }
+
     @Override
     public void close(){
         try {
-            resultSet.close();
-            statement.close();
-            connection.close();
+            if(resultSet != null)
+                resultSet.close();
+            if(statement != null)
+                statement.close();
+            if(connection != null)
+                connection.close();
         } catch (SQLException e) {
             LOGGER.error("Failed to close DB connection");
         }

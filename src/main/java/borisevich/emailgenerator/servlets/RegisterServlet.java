@@ -65,19 +65,18 @@ public class RegisterServlet extends HttpServlet {
         }
         return true;
     }
-    private void registerUser(HttpServletRequest req){
+    private void registerUser(String username, String password){
         //TODO: add registration in DB (with hashCode)
-        /*
+
         try (DBConnector dbConnector = new DBConnector()){
-            ResultSet resultSet = dbConnector.executeStatement(
-                    "INSERT INTO USERS " +
-                            "WHERE username=" +
-                            req.getParameter("username")
-                            + ";");
+            dbConnector.executeUpdate(
+                    "INSERT INTO users (username, password)" +
+                            "VALUES (\'" + username + "\', \'" +
+                            password + "\');");
         } catch (SQLException e) {
             LOGGER.error("SQLException: can't check user's existence");
         }
-        */
+
     }
 
     @Override
@@ -102,7 +101,7 @@ public class RegisterServlet extends HttpServlet {
             req.setAttribute("Error", "This user already exists. Please, choose another username.");
             req.getRequestDispatcher("/register.jsp").forward(req, resp);
         }
-        registerUser(req);
+        registerUser(req.getParameter("username"), req.getParameter("password"));
         req.getRequestDispatcher("/login.jsp").forward(req, resp);
     }
 }
