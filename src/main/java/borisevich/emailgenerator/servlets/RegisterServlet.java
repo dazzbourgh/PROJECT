@@ -12,19 +12,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.regex.PatternSyntaxException;
 
 /**
  * Created by Leonid on 02.09.2016.
  */
-/*TODO: add checking of
-    -null username
-    -null password
-    -incorrect username
-    -incorrect password
-    -passwords do not match
-    -user already exists
- */
-
 
 @WebServlet("/register")
 public class RegisterServlet extends HttpServlet {
@@ -40,9 +32,12 @@ public class RegisterServlet extends HttpServlet {
         return false;
     }
     private boolean checkUsernameIncorrect(HttpServletRequest req){
-        //TODO: correct regex
-        //if(!req.getParameter("username").matches("\\b[a-zA-Z][a-zA-Z0-9\\-._]{15,}\\b"))
-        //    return true;
+        try {
+            if (!req.getParameter("username").matches("[a-zA-Z][a-zA-Z0-9]{1,14}"))
+                return true;
+        }catch (PatternSyntaxException e){
+            LOGGER.error("Incorrect regular expression");
+        }
         return false;
     }
     private boolean checkUserAlreadyExists(HttpServletRequest req){
@@ -85,12 +80,12 @@ public class RegisterServlet extends HttpServlet {
             req.setAttribute("Error", "Please, enter username.");
             req.getRequestDispatcher("/register.jsp").forward(req, resp);
         }
-        if(checkPasswordNull(req)) {
-            req.setAttribute("Error", "Please, enter password.");
-            req.getRequestDispatcher("/register.jsp").forward(req, resp);
-        }
         if(checkUsernameIncorrect(req)) {
             req.setAttribute("Error", "Only letters and numbers are allowed for username.");
+            req.getRequestDispatcher("/register.jsp").forward(req, resp);
+        }
+        if(checkPasswordNull(req)) {
+            req.setAttribute("Error", "Please, enter password.");
             req.getRequestDispatcher("/register.jsp").forward(req, resp);
         }
         if(checkPasswordsNotMatch(req)) {
@@ -102,6 +97,6 @@ public class RegisterServlet extends HttpServlet {
             req.getRequestDispatcher("/register.jsp").forward(req, resp);
         }
         registerUser(req.getParameter("username"), req.getParameter("password"));
-        req.getRequestDispatcher("/login.jsp").forward(req, resp);
+        req.getRequestDispatcher("/index.jsp").forward(req, resp);
     }
 }
