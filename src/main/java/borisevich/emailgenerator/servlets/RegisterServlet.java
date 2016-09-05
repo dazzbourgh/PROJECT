@@ -79,22 +79,27 @@ public class RegisterServlet extends HttpServlet {
         if(checkUsernameNull(req)) {
             req.setAttribute("Error", "Please, enter username.");
             req.getRequestDispatcher("/register.jsp").forward(req, resp);
+            return;
         }
         if(checkUsernameIncorrect(req)) {
             req.setAttribute("Error", "Only letters and numbers are allowed for username.");
             req.getRequestDispatcher("/register.jsp").forward(req, resp);
+            return;
         }
         if(checkPasswordNull(req)) {
             req.setAttribute("Error", "Please, enter password.");
             req.getRequestDispatcher("/register.jsp").forward(req, resp);
+            return;
         }
         if(checkPasswordsNotMatch(req)) {
             req.setAttribute("Error", "Passwords do not match.");
             req.getRequestDispatcher("/register.jsp").forward(req, resp);
+            return;
         }
         if(checkUserAlreadyExists(req)) {
             req.setAttribute("Error", "This user already exists. Please, choose another username.");
             req.getRequestDispatcher("/register.jsp").forward(req, resp);
+            return;
         }
         registerUser(req.getParameter("username"), req.getParameter("password"));
         req.getRequestDispatcher("/index.jsp").forward(req, resp);
