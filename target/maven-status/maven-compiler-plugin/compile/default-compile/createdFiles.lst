@@ -1,8 +1,11 @@
+borisevich\emailgenerator\db\UserDAO.class
+borisevich\emailgenerator\functional\Email.class
+borisevich\emailgenerator\servlets\GenerateServlet.class
+borisevich\emailgenerator\db\MySQLUserDAO.class
+borisevich\emailgenerator\filters\AuthFilter.class
+borisevich\emailgenerator\functional\User.class
 borisevich\emailgenerator\functional\Generator.class
 borisevich\emailgenerator\servlets\GenerationFormLoaderServlet.class
-borisevich\emailgenerator\functional\Email.class
 borisevich\emailgenerator\servlets\LoginServlet.class
 borisevich\emailgenerator\servlets\RegisterServlet.class
-borisevich\emailgenerator\servlets\GenerateServlet.class
-borisevich\emailgenerator\filters\AuthFilter.class
 borisevich\emailgenerator\db\DBConnector.class

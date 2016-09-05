@@ -1,6 +1,8 @@
 package borisevich.emailgenerator.servlets;
 
 import borisevich.emailgenerator.db.DBConnector;
+import borisevich.emailgenerator.db.MySQLUserDAO;
+import borisevich.emailgenerator.functional.User;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -12,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Collections;
 import java.util.regex.PatternSyntaxException;
 
 /**
@@ -41,18 +44,9 @@ public class RegisterServlet extends HttpServlet {
         return false;
     }
     private boolean checkUserAlreadyExists(HttpServletRequest req){
-        try (DBConnector dbConnector = new DBConnector();){
-            ResultSet resultSet = dbConnector.executeStatement(
-                    "SELECT * FROM USERS " +
-                            "WHERE username=" +
-                            req.getParameter("username")
-            + ";");
-            if(resultSet.next() == false)
-                return true;
-        } catch (SQLException e) {
-            LOGGER.error("SQLException: can't check user's existence");
-        }
-        return false;
+        if(new MySQLUserDAO().findByName(req.getParameter("username")).equals(Collections.emptyList()))
+            return false;
+        return true;
     }
     private boolean checkPasswordsNotMatch(HttpServletRequest req){
         if(req.getParameter("password").equals(req.getParameter("password2"))){
@@ -61,17 +55,7 @@ public class RegisterServlet extends HttpServlet {
         return true;
     }
     private void registerUser(String username, String password){
-        //TODO: add registration in DB (with hashCode)
-
-        try (DBConnector dbConnector = new DBConnector()){
-            dbConnector.executeUpdate(
-                    "INSERT INTO users (username, password)" +
-                            "VALUES (\'" + username + "\', \'" +
-                            password + "\');");
-        } catch (SQLException e) {
-            LOGGER.error("SQLException: can't check user's existence");
-        }
-
+        new MySQLUserDAO().insertUser(new User(username, password));
     }
 
     @Override
