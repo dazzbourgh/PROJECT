@@ -1,5 +1,7 @@
 package borisevich.emailgenerator.servlets;
 
+import borisevich.emailgenerator.db.MySQLAddressDAO;
+import borisevich.emailgenerator.db.MySQLEmailDAO;
 import borisevich.emailgenerator.functional.Email;
 
 import javax.servlet.ServletException;
@@ -8,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,8 +19,7 @@ import java.util.List;
 public class MyAccountServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Email> emailList = new ArrayList<>();
-        emailList.add(new Email("testlabel@test.com", "some text"));
+        List<Email> emailList = new MySQLEmailDAO().findByUserId(0);
         req.setAttribute("emailList", emailList);
         req.getRequestDispatcher("/myaccount.jsp").forward(req, resp);
     }

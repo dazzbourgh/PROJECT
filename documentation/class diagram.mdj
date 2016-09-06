@@ -674,7 +674,7 @@
 							"width": 308.77783203125,
 							"height": 321,
 							"autoResize": false,
-							"stereotypeDisplay": "label",
+							"stereotypeDisplay": "address",
 							"showVisibility": true,
 							"showNamespace": false,
 							"showProperty": true,

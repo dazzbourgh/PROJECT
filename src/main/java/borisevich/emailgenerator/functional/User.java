@@ -4,10 +4,12 @@ package borisevich.emailgenerator.functional;
  * Created by Leonid on 05.09.2016.
  */
 public class User {
+    private int user_id;
     private String username;
     private String password;
 
-    public User(String username, String password){
+    public User(int user_id, String username, String password){
+        this.user_id = user_id;
         this.username = username;
         this.password = password;
     }

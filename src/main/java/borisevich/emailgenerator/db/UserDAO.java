@@ -8,7 +8,7 @@ import java.util.List;
  * Created by Leonid on 05.09.2016.
  */
 interface UserDAO {
-    List<User> findByName(String username);
+    List<User> findByName(String name);
 
     boolean checkPassword(User user);
     boolean insertUser(User user);

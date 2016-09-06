@@ -1,6 +1,7 @@
 package borisevich.emailgenerator.servlets;
 
 import borisevich.emailgenerator.db.DBConnector;
+import borisevich.emailgenerator.db.MySQLAddressDAO;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -22,20 +23,9 @@ import java.util.List;
 public class GenerationFormLoaderServlet extends HttpServlet {
     final Logger logger = Logger.getLogger(GenerationFormLoaderServlet.class.getName());
 
-    //TODO: add db support
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try (DBConnector dbConnector = new DBConnector()){
-            ResultSet rs = dbConnector.executeStatement("SELECT * FROM addresses");
-            List<String> labelsList = new ArrayList<String>();
-            while(rs.next()){
-                labelsList.add(rs.getString("address"));
-            }
-            rs.close();
-            req.setAttribute("labelsList", labelsList);
-        } catch (SQLException e) {
-            logger.error("Error while retrieving labels list from DB");
-        }
+        req.setAttribute("labelsList", new MySQLAddressDAO().findAll());
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/generation.jsp");
         requestDispatcher.forward(req, resp);
     }

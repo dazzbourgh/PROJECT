@@ -38,19 +38,19 @@ public class MySQLUserDAO implements UserDAO {
     }
 
     @Override
-    public List<User> findByName(String username) {
+    public List<User> findByName(String name) {
         List<User> returnValue = new LinkedList<>();
         try (DBConnector dbConnector = new DBConnector()){
             ResultSet resultSet = dbConnector.executeStatement(
                     "SELECT * FROM USERS " +
                             "WHERE username=\'" +
-                            username +
+                            name +
                             "\';");
             if(!resultSet.next())
                 return Collections.emptyList();
             resultSet.beforeFirst();
             while(resultSet.next()){
-                returnValue.add(new User(resultSet.getString("username"), "NO_PASSWORD_NEEDED"));
+                returnValue.add(new User(resultSet.getInt("user_id"), resultSet.getString("username"), "NO_PASSWORD_NEEDED"));
             }
         } catch (SQLException e) {
             LOGGER.error("SQLException: can't check user's existence");
