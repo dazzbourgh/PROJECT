@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login to our app</title>
+        <title>Generation</title>
     </head>
     <body>
         <h1>Email Generator</h1>

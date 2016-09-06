@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login to our app</title>
+        <title>Login</title>
     </head>
     <body>
         <h1>Please login</h1>

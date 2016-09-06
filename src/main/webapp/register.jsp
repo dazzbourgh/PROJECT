@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login to our app</title>
+        <title>Registration</title>
         <style>
         p    {color: red;}
         </style>

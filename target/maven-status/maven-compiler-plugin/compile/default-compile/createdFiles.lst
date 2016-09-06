@@ -1,3 +1,4 @@
+borisevich\emailgenerator\servlets\MyAccountServlet.class
 borisevich\emailgenerator\db\UserDAO.class
 borisevich\emailgenerator\functional\Email.class
 borisevich\emailgenerator\servlets\GenerateServlet.class
@@ -8,4 +9,5 @@ borisevich\emailgenerator\functional\Generator.class
 borisevich\emailgenerator\servlets\GenerationFormLoaderServlet.class
 borisevich\emailgenerator\servlets\LoginServlet.class
 borisevich\emailgenerator\servlets\RegisterServlet.class
+test\TestDBAddUser.class
 borisevich\emailgenerator\db\DBConnector.class

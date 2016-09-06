@@ -16,6 +16,28 @@ public class MySQLUserDAO implements UserDAO {
     private static final Logger LOGGER = Logger.getLogger(MySQLUserDAO.class.getName());
 
     @Override
+    public boolean checkPassword(User user) {
+        try(DBConnector dbConnector = new DBConnector()) {
+
+            ResultSet rs = dbConnector.executeStatement("SELECT * " +
+                    "FROM USERS " +
+                    "WHERE username=\'" + user.getUsername() +
+                    "\' && password=\'" + user.getPassword() +
+                    "\';"
+            );
+
+            if (rs.next()) {
+                return true;
+            }
+            //dbConnector.close();
+        } catch (SQLException e){
+            LOGGER.debug("ERROR: can't connect to DB");
+            return false;
+        }
+        return false;
+    }
+
+    @Override
     public List<User> findByName(String username) {
         List<User> returnValue = new LinkedList<>();
         try (DBConnector dbConnector = new DBConnector()){

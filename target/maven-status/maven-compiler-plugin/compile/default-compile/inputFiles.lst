@@ -1,7 +1,13 @@
 C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\servlets\GenerateServlet.java
-C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\functional\Email.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\functional\User.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\servlets\MyAccountServlet.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\filters\AuthFilter.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\test\TestDBAddUser.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\db\DBConnector.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\db\MySQLUserDAO.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\servlets\RegisterServlet.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\functional\Generator.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\db\UserDAO.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\functional\Email.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\servlets\GenerationFormLoaderServlet.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\servlets\LoginServlet.java
-C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\functional\Generator.java

@@ -1,15 +1,26 @@
 package borisevich.emailgenerator.functional;
 
-public class Email{
-    private String addressee;
-    private String text;
+import java.util.Date;
 
-    public String getAddressee() {
-        return addressee;
+public class Email{
+    private String address;
+    private String text;
+    private Date date;
+
+    public Date getDate() {
+        return date;
     }
 
-    public void setAddressee(String addressee) {
-        this.addressee = addressee;
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getText() {
@@ -24,8 +35,8 @@ public class Email{
 
     }
 
-    public Email(String addressee, String text){
-        this.addressee = addressee;
+    public Email(String address, String text){
+        this.address = address;
         this.text = text;
     }
 }
