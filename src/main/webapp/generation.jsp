@@ -12,8 +12,10 @@
         <form action="generate" method="GET">
             Track info:<br>
             <input type="text" name="trackInfo"/><br/>
-            <c:forEach var="par" items="${labelsList}">
-                <input type="checkbox" name="label" value="${par}">${par}<br>
+            <c:forEach var="par" items="${addressList}">
+                <input type="checkbox" name="address" value="${par.getName()}" />
+                <c:out value="${par.getName()}"/>
+                <br>
             </c:forEach>
             <input type="submit" />
         </form>

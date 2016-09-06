@@ -26,7 +26,7 @@ public class MySQLAddressDAO implements AddressDAO {
             ResultSet rs = dbConnector.executeStatement("SELECT * FROM addresses");
             List<Address> addressList = new ArrayList<>();
             while(rs.next()){
-                addressList.add(new Address(rs.getInt("address_id"), rs.getString("address"), rs.getNString("name")));
+                addressList.add(new Address(rs.getInt("address_id"), rs.getString("address"), rs.getString("name")));
             }
             return addressList;
         } catch (SQLException e) {
