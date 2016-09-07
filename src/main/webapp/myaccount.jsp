@@ -10,8 +10,10 @@
         <h1>My Account</h1>
 
             Email history:<br>
+            <c:set var="i" value="${1}" />
             <c:forEach var="par" items="${emailList}">
-                <c:out value="${par.getAddress()}"/>
+                <c:out value="${i}. To: ${par.getAddress()}"/>
+                <c:set var="i" value="${i+1}" />
             </c:forEach>
     </body>
 </html>

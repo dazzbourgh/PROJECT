@@ -19,7 +19,7 @@ import java.util.List;
 public class MyAccountServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Email> emailList = new MySQLEmailDAO().findByUserId(0);
+        List<Email> emailList = new MySQLEmailDAO().findByUserId(new Integer(req.getSession().getAttribute("user_id").toString()));
         req.setAttribute("emailList", emailList);
         req.getRequestDispatcher("/myaccount.jsp").forward(req, resp);
     }

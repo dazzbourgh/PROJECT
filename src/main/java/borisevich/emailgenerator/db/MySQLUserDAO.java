@@ -38,6 +38,27 @@ public class MySQLUserDAO implements UserDAO {
     }
 
     @Override
+    public int getUserId(String name) {
+        try(DBConnector dbConnector = new DBConnector()) {
+
+            ResultSet rs = dbConnector.executeStatement("SELECT user_id " +
+                    "FROM USERS " +
+                    "WHERE username=\'" + name +
+                    "\';"
+            );
+
+            if (rs.next()) {
+                return rs.getInt("user_id");
+            }
+            //dbConnector.close();
+        } catch (SQLException e){
+            LOGGER.debug("ERROR: can't connect to DB");
+            return -1;
+        }
+        return -1;
+    }
+
+    @Override
     public List<User> findByName(String name) {
         List<User> returnValue = new LinkedList<>();
         try (DBConnector dbConnector = new DBConnector()){

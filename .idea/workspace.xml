@@ -2,17 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="039ac618-4083-4e90-bb25-2bd7b879caa5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/AuthTokenContainer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator.war" afterPath="$PROJECT_DIR$/target/borisevich.emailgenerator.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/MySQLAddressDAO.class" afterPath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/MySQLAddressDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.class" afterPath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/MySQLAddressDAO.class" afterPath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/MySQLAddressDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.class" afterPath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/MySQLEmailDAO.class" afterPath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/MySQLEmailDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/MySQLUserDAO.class" afterPath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/MySQLUserDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/UserDAO.class" afterPath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/UserDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/filters/AuthFilter.class" afterPath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/filters/AuthFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/LoginServlet.class" afterPath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/LoginServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/MyAccountServlet.class" afterPath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/MyAccountServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/MySQLEmailDAO.class" afterPath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/MySQLEmailDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/MySQLUserDAO.class" afterPath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/MySQLUserDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/UserDAO.class" afterPath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/UserDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/filters/AuthFilter.class" afterPath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/filters/AuthFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/LoginServlet.class" afterPath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/LoginServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/MyAccountServlet.class" afterPath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/MyAccountServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLAddressDAO.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLAddressDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/generation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/generation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/generation.jsp" afterPath="$PROJECT_DIR$/target/borisevich.emailgenerator/generation.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLEmailDAO.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLEmailDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLUserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLUserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/UserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/filters/AuthFilter.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/filters/AuthFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/myaccount.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/myaccount.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/myaccount.jsp" afterPath="$PROJECT_DIR$/target/borisevich.emailgenerator/myaccount.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="Email Generator.iws" />
@@ -36,14 +50,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="MyAccountServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java">
+      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="385">
+              <caret line="38" column="112" selection-start-line="38" selection-start-column="112" selection-end-line="38" selection-end-column="112" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,75 +63,28 @@
       <file leaf-file-name="myaccount.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/myaccount.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="441">
+              <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Email.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Email.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="190">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQLEmailDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLEmailDAO.java">
+      <file leaf-file-name="MyAccountServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#266#267#0" expanded="true" />
-                <element signature="e#293#294#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Address.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Address.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-532">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-              <folding>
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#585#586#0" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenerationFormLoaderServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MySQLAddressDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLAddressDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="28" column="117" selection-start-line="28" selection-start-column="117" selection-end-line="28" selection-end-column="117" />
+            <state relative-caret-position="375">
+              <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,21 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Generator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Generator.java">
+      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/generation.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+            <state relative-caret-position="380">
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -150,8 +105,50 @@
       <file leaf-file-name="MySQLUserDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLUserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-233">
-              <caret line="52" column="70" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
+            <state relative-caret-position="114">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="36" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MySQLEmailDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLEmailDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="33" column="70" selection-start-line="33" selection-start-column="70" selection-end-line="33" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Email.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Email.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBConnector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/DBConnector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-22">
+              <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSourceProxy.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jdbc/9.0.0.M9/tomcat-jdbc-9.0.0.M9-sources.jar!/org/apache/tomcat/jdbc/pool/DataSourceProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -197,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/GenerateServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerateServlet.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/filters/AuthFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/IDBConnector.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/DBConnector.java" />
@@ -206,23 +202,25 @@
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Generator.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/menu.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/myaccount.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLLabelDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/LabelDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/AddressDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/EmailDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLEmailDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Email.java" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLUserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Address.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLAddressDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/generation.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/AuthTokenContainer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/filters/AuthFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLUserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/myaccount.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLEmailDAO.java" />
       </list>
     </option>
   </component>
@@ -466,6 +464,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="emailgenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -923,7 +925,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1102" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -932,7 +934,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27052024" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.233526" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -952,30 +954,31 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283237" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27052024" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27052024" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1007,35 +1010,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/util/LinkedHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12844">
-          <caret line="366" column="11" selection-start-line="366" selection-start-column="11" selection-end-line="366" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar!/javax/servlet/http/HttpSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-sources.jar!/javax/servlet/http/HttpSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6536">
-          <caret line="229" column="21" selection-start-line="229" selection-start-column="18" selection-end-line="229" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1075,13 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/filters/AuthFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/sql/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3002">
@@ -1100,6 +1067,194 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18164">
           <caret line="595" column="16" selection-start-line="595" selection-start-column="16" selection-end-line="595" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#30839#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4740#4741#0" expanded="false" />
+            <element signature="e#4788#4789#0" expanded="false" />
+            <element signature="e#4875#4876#0" expanded="false" />
+            <element signature="e#4907#4908#0" expanded="false" />
+            <element signature="e#5009#5010#0" expanded="false" />
+            <element signature="e#5051#5052#0" expanded="false" />
+            <element signature="e#5164#5165#0" expanded="false" />
+            <element signature="e#5222#5223#0" expanded="false" />
+            <element signature="e#5321#5322#0" expanded="false" />
+            <element signature="e#5364#5365#0" expanded="false" />
+            <element signature="e#5459#5460#0" expanded="false" />
+            <element signature="e#5494#5495#0" expanded="false" />
+            <element signature="e#5590#5591#0" expanded="false" />
+            <element signature="e#5630#5631#0" expanded="false" />
+            <element signature="e#5723#5724#0" expanded="false" />
+            <element signature="e#5760#5761#0" expanded="false" />
+            <element signature="e#5854#5855#0" expanded="false" />
+            <element signature="e#5892#5893#0" expanded="false" />
+            <element signature="e#5995#5996#0" expanded="false" />
+            <element signature="e#6045#6046#0" expanded="false" />
+            <element signature="e#6139#6140#0" expanded="false" />
+            <element signature="e#6177#6178#0" expanded="false" />
+            <element signature="e#6264#6265#0" expanded="false" />
+            <element signature="e#6298#6299#0" expanded="false" />
+            <element signature="e#6389#6390#0" expanded="false" />
+            <element signature="e#6424#6425#0" expanded="false" />
+            <element signature="e#6509#6510#0" expanded="false" />
+            <element signature="e#6541#6542#0" expanded="false" />
+            <element signature="e#6624#6625#0" expanded="false" />
+            <element signature="e#6654#6655#0" expanded="false" />
+            <element signature="e#6737#6738#0" expanded="false" />
+            <element signature="e#6767#6768#0" expanded="false" />
+            <element signature="e#6869#6870#0" expanded="false" />
+            <element signature="e#6918#6919#0" expanded="false" />
+            <element signature="e#7001#7002#0" expanded="false" />
+            <element signature="e#7031#7032#0" expanded="false" />
+            <element signature="e#7114#7115#0" expanded="false" />
+            <element signature="e#7141#7142#0" expanded="false" />
+            <element signature="e#7239#7240#0" expanded="false" />
+            <element signature="e#7284#7285#0" expanded="false" />
+            <element signature="e#7371#7372#0" expanded="false" />
+            <element signature="e#7402#7403#0" expanded="false" />
+            <element signature="e#7489#7490#0" expanded="false" />
+            <element signature="e#7521#7522#0" expanded="false" />
+            <element signature="e#7615#7616#0" expanded="false" />
+            <element signature="e#7653#7654#0" expanded="false" />
+            <element signature="e#7751#7752#0" expanded="false" />
+            <element signature="e#7796#7797#0" expanded="false" />
+            <element signature="e#7887#7888#0" expanded="false" />
+            <element signature="e#7922#7923#0" expanded="false" />
+            <element signature="e#8013#8014#0" expanded="false" />
+            <element signature="e#8048#8049#0" expanded="false" />
+            <element signature="e#8140#8141#0" expanded="false" />
+            <element signature="e#8176#8177#0" expanded="false" />
+            <element signature="e#8281#8282#0" expanded="false" />
+            <element signature="e#8333#8334#0" expanded="false" />
+            <element signature="e#8415#8416#0" expanded="false" />
+            <element signature="e#8441#8442#0" expanded="false" />
+            <element signature="e#8528#8529#0" expanded="false" />
+            <element signature="e#8559#8560#0" expanded="false" />
+            <element signature="e#8653#8654#0" expanded="false" />
+            <element signature="e#8691#8692#0" expanded="false" />
+            <element signature="e#8788#8789#0" expanded="false" />
+            <element signature="e#8833#8834#0" expanded="false" />
+            <element signature="e#9122#9123#0" expanded="false" />
+            <element signature="e#9163#9164#0" expanded="false" />
+            <element signature="e#9254#9255#0" expanded="false" />
+            <element signature="e#9286#9287#0" expanded="false" />
+            <element signature="e#9700#9701#0" expanded="false" />
+            <element signature="e#9741#9742#0" expanded="false" />
+            <element signature="e#9827#9828#0" expanded="false" />
+            <element signature="e#9857#9858#0" expanded="false" />
+            <element signature="e#9949#9950#0" expanded="false" />
+            <element signature="e#9985#9986#0" expanded="false" />
+            <element signature="e#10080#10081#0" expanded="false" />
+            <element signature="e#10119#10120#0" expanded="false" />
+            <element signature="e#12569#12570#0" expanded="false" />
+            <element signature="e#12617#12618#0" expanded="false" />
+            <element signature="e#12736#12737#0" expanded="false" />
+            <element signature="e#12794#12795#0" expanded="false" />
+            <element signature="e#12906#12907#0" expanded="false" />
+            <element signature="e#12958#12959#0" expanded="false" />
+            <element signature="e#13073#13074#0" expanded="false" />
+            <element signature="e#13127#13128#0" expanded="false" />
+            <element signature="e#13454#13455#0" expanded="false" />
+            <element signature="e#13508#13509#0" expanded="false" />
+            <element signature="e#13611#13612#0" expanded="false" />
+            <element signature="e#13657#13658#0" expanded="false" />
+            <element signature="e#13766#13767#0" expanded="false" />
+            <element signature="e#13814#13815#0" expanded="false" />
+            <element signature="e#14050#14051#0" expanded="false" />
+            <element signature="e#14088#14089#0" expanded="false" />
+            <element signature="e#14183#14184#0" expanded="false" />
+            <element signature="e#14221#14222#0" expanded="false" />
+            <element signature="e#14525#14526#0" expanded="false" />
+            <element signature="e#14563#14564#0" expanded="false" />
+            <element signature="e#14655#14656#0" expanded="false" />
+            <element signature="e#14687#14688#0" expanded="false" />
+            <element signature="e#14980#14981#0" expanded="false" />
+            <element signature="e#15020#15021#0" expanded="false" />
+            <element signature="e#15135#15136#0" expanded="false" />
+            <element signature="e#15189#15190#0" expanded="false" />
+            <element signature="e#15491#15492#0" expanded="false" />
+            <element signature="e#15539#15540#0" expanded="false" />
+            <element signature="e#15650#15651#0" expanded="false" />
+            <element signature="e#15700#15701#0" expanded="false" />
+            <element signature="e#15809#15810#0" expanded="false" />
+            <element signature="e#15857#15858#0" expanded="false" />
+            <element signature="e#16217#16218#0" expanded="false" />
+            <element signature="e#16247#16248#0" expanded="false" />
+            <element signature="e#16347#16348#0" expanded="false" />
+            <element signature="e#16387#16388#0" expanded="false" />
+            <element signature="e#16505#16506#0" expanded="false" />
+            <element signature="e#16565#16566#0" expanded="false" />
+            <element signature="e#16679#16680#0" expanded="false" />
+            <element signature="e#16733#16734#0" expanded="false" />
+            <element signature="e#18276#18277#0" expanded="false" />
+            <element signature="e#18326#18327#0" expanded="false" />
+            <element signature="e#19906#19907#0" expanded="false" />
+            <element signature="e#19946#19947#0" expanded="false" />
+            <element signature="e#20035#20036#0" expanded="false" />
+            <element signature="e#20068#20069#0" expanded="false" />
+            <element signature="e#20173#20174#0" expanded="false" />
+            <element signature="e#20217#20218#0" expanded="false" />
+            <element signature="e#20314#20315#0" expanded="false" />
+            <element signature="e#20354#20355#0" expanded="false" />
+            <element signature="e#20449#20450#0" expanded="false" />
+            <element signature="e#20487#20488#0" expanded="false" />
+            <element signature="e#20578#20579#0" expanded="false" />
+            <element signature="e#20620#20621#0" expanded="false" />
+            <element signature="e#20722#20723#0" expanded="false" />
+            <element signature="e#20767#20768#0" expanded="false" />
+            <element signature="e#21620#21621#0" expanded="false" />
+            <element signature="e#21670#21671#0" expanded="false" />
+            <element signature="e#21829#21830#0" expanded="false" />
+            <element signature="e#21869#21870#0" expanded="false" />
+            <element signature="e#22099#22100#0" expanded="false" />
+            <element signature="e#22153#22154#0" expanded="false" />
+            <element signature="e#22219#22220#0" expanded="false" />
+            <element signature="e#22260#22261#0" expanded="false" />
+            <element signature="e#23854#23855#0" expanded="false" />
+            <element signature="e#23889#23890#0" expanded="false" />
+            <element signature="e#23924#23925#0" expanded="false" />
+            <element signature="e#23960#23961#0" expanded="false" />
+            <element signature="e#26075#26076#0" expanded="false" />
+            <element signature="e#26121#26122#0" expanded="false" />
+            <element signature="e#26537#26538#0" expanded="false" />
+            <element signature="e#26569#26570#0" expanded="false" />
+            <element signature="e#26672#26673#0" expanded="false" />
+            <element signature="e#26714#26715#0" expanded="false" />
+            <element signature="e#26797#26798#0" expanded="false" />
+            <element signature="e#26826#26827#0" expanded="false" />
+            <element signature="e#26920#26921#0" expanded="false" />
+            <element signature="e#26956#26957#0" expanded="false" />
+            <element signature="e#27043#27044#0" expanded="false" />
+            <element signature="e#27073#27074#0" expanded="false" />
+            <element signature="e#27172#27173#0" expanded="false" />
+            <element signature="e#27210#27211#0" expanded="false" />
+            <element signature="e#27567#27568#0" expanded="false" />
+            <element signature="e#27600#27601#0" expanded="false" />
+            <element signature="e#27704#27705#0" expanded="false" />
+            <element signature="e#27748#27749#0" expanded="false" />
+            <element signature="e#27840#27841#0" expanded="false" />
+            <element signature="e#27882#27883#0" expanded="false" />
+            <element signature="e#28397#28398#0" expanded="false" />
+            <element signature="e#28444#28445#0" expanded="false" />
+            <element signature="e#28761#28762#0" expanded="false" />
+            <element signature="e#28813#28814#0" expanded="false" />
+            <element signature="e#28906#28907#0" expanded="false" />
+            <element signature="e#28948#28949#0" expanded="false" />
+            <element signature="e#29064#29065#0" expanded="false" />
+            <element signature="e#29120#29121#0" expanded="false" />
+            <element signature="e#29215#29216#0" expanded="false" />
+            <element signature="e#29259#29260#0" expanded="false" />
+            <element signature="e#29591#29592#0" expanded="false" />
+            <element signature="e#29643#29644#0" expanded="false" />
+            <element signature="e#29765#29766#0" expanded="false" />
+            <element signature="e#29827#29828#0" expanded="false" />
+            <element signature="e#29925#29926#0" expanded="false" />
+            <element signature="e#29972#29973#0" expanded="false" />
+            <element signature="e#30074#30075#0" expanded="false" />
+            <element signature="e#30120#30121#0" expanded="false" />
+            <element signature="e#30422#30423#0" expanded="false" />
+            <element signature="e#30469#30470#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1129,17 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4028">
           <caret line="135" column="18" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-sources.jar!/javax/servlet/ServletRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6840">
-          <caret line="237" column="18" selection-start-line="237" selection-start-column="18" selection-end-line="237" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#29902#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1187,6 +1331,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1596">
           <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1202,6 +1347,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1558">
           <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#65869#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1236,14 +1384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-163">
@@ -1257,16 +1397,8 @@
         <state relative-caret-position="365">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/DBConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
-          <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1275,16 +1407,8 @@
         <state relative-caret-position="289">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1292,22 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="739">
           <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-233">
-          <caret line="52" column="70" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -1322,41 +1430,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLAddressDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="28" column="117" selection-start-line="28" selection-start-column="117" selection-end-line="28" selection-end-column="117" />
+        <state relative-caret-position="342">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-532">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1364,30 +1441,165 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
-          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <element signature="e#395#396#0" expanded="false" />
+            <element signature="e#428#429#0" expanded="false" />
+            <element signature="e#477#478#0" expanded="false" />
+            <element signature="e#521#522#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+            <element signature="e#585#586#0" expanded="false" />
+            <element signature="e#631#632#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#700#701#0" expanded="false" />
+            <element signature="e#727#728#0" expanded="false" />
+            <element signature="e#767#768#0" expanded="false" />
+            <element signature="e#799#800#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/generation.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        <state relative-caret-position="365">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-sources.jar!/javax/servlet/http/HttpServletRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="527" column="18" selection-start-line="527" selection-start-column="18" selection-end-line="527" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-sources.jar!/javax/servlet/ServletRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="109" column="18" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/math/BigInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="3540" column="18" selection-start-line="3540" selection-start-column="18" selection-end-line="3540" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-sources.jar!/javax/servlet/http/HttpSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="229" column="18" selection-start-line="229" selection-start-column="18" selection-end-line="229" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/AuthTokenContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/filters/AuthFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="38" column="112" selection-start-line="38" selection-start-column="112" selection-end-line="38" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="36" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jdbc/9.0.0.M9/tomcat-jdbc-9.0.0.M9-sources.jar!/org/apache/tomcat/jdbc/pool/DataSourceProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/DBConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/myaccount.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="441">
+          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Email.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
+        <state relative-caret-position="608">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
@@ -1395,12 +1607,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLEmailDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="472">
+          <caret line="33" column="70" selection-start-line="33" selection-start-column="70" selection-end-line="33" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
           </folding>
         </state>
       </provider>

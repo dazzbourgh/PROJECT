@@ -10,6 +10,7 @@ import java.util.List;
 interface UserDAO {
     List<User> findByName(String name);
 
+    int getUserId(String name);
     boolean checkPassword(User user);
     boolean insertUser(User user);
     boolean updateUser(User user);

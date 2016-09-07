@@ -16,3 +16,4 @@ borisevich\emailgenerator\servlets\LoginServlet.class
 borisevich\emailgenerator\servlets\RegisterServlet.class
 test\TestDBAddUser.class
 borisevich\emailgenerator\db\DBConnector.class
+borisevich\emailgenerator\functional\AuthTokenContainer.class
