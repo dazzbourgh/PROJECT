@@ -5,9 +5,11 @@ C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\db\Ema
 C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\filters\AuthFilter.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\test\TestDBAddUser.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\db\DBConnector.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\servlets\EditAddressesServlet.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\db\MySQLUserDAO.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\servlets\RegisterServlet.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\db\AddressDAO.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\servlets\EditAddressesLoaderServlet.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\functional\Generator.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\db\MySQLEmailDAO.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\borisevich\emailgenerator\db\UserDAO.java

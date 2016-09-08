@@ -41,17 +41,27 @@ public class MySQLAddressDAO implements AddressDAO {
     }
 
     @Override
-    public boolean insertLabel(Address address) {
+    public boolean insertAddress(Address address) {
         return false;
     }
 
     @Override
-    public boolean updateLabel(Address address) {
+    public boolean updateAddress(Address address) {
+        try(DBConnector dbConnector = new DBConnector()){
+            dbConnector.executeUpdate("UPDATE addresses " +
+                    "SET address=\'" + address.getAddress() + "\'," +
+                    "name=\'" + address.getName() + "\' " +
+                    "WHERE address_id=\'" + address.getAddress_id() + "\';"
+            );
+        } catch (SQLException e){
+            LOGGER.error("Can not update address");
+            LOGGER.error(e);
+        }
         return false;
     }
 
     @Override
-    public boolean deleteLabel(Address address) {
+    public boolean deleteAddress(Address address) {
         return false;
     }
 }

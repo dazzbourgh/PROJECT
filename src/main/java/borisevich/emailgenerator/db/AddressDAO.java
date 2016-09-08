@@ -12,7 +12,7 @@ public interface AddressDAO {
     List<Address> findAll();
 
     boolean checkPassword(Address address);
-    boolean insertLabel(Address address);
-    boolean updateLabel(Address address);
-    boolean deleteLabel(Address address);
+    boolean insertAddress(Address address);
+    boolean updateAddress(Address address);
+    boolean deleteAddress(Address address);
 }

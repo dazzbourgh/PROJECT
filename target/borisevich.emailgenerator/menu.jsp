@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login</title>
+        <title>Menu</title>
     </head>
     <body>
         <h1>Menu</h1>
@@ -14,6 +14,9 @@
         </form>
         <form action="generationFormLoader" method="POST">
             <input type="submit" value="Generation"/>
+        </form>
+        <form action="editAddressesLoader" method="GET">
+            <input type="submit" value="Edit Addresses"/>
         </form>
     </body>
 </html>
