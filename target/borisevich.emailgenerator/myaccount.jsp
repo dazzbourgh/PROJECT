@@ -1,15 +1,15 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<jsp:directive.include file="locale.jsp" />
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>My Account</title>
+        <title>${myaccountLabelHeader}</title>
     </head>
     <body>
-        <h1>My Account</h1>
+        <h1>${myaccountLabelHeader}</h1>
 
-            Email history:<br>
+            <c:out value="${myaccountLabelEmailHistory}:" /><br>
             <c:set var="i" value="${1}" />
             <c:forEach var="par" items="${emailList}">
                 <c:out value="${i}. To: ${par.getAddress()}"/>

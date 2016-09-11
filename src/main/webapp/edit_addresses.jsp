@@ -1,13 +1,14 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<jsp:directive.include file="locale.jsp" />
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Edit Addresses</title>
+        <title>${headerEditAddresses}</title>
     </head>
     <body>
-        <h1>Edit Addresses</h1>
+        <h1>${headerEditAddresses}</h1>
 
         <form action="editAddresses" method="POST">
             <c:set var="i" value="${0}" />
@@ -20,15 +21,17 @@
             </c:forEach>
             <input type="hidden" name="quantity" value="${i}" />
             <br>
-            <input type="submit" value="Submit changes"/>
+            <input type="submit" value="${submitChangesButton}" />
         </form>
         <br>
-        Add new address:
+        <c:out value="${addNewAddress}" />:
         <br>
         <form action="addAddress" method="POST">
-            Name: <input type="text" name="name" /> <br>
-            Address: <input type="text" name="address" /> <br>
-            <input type="submit" value="Add"/>
+            <c:out value="${edit_addressesLabelName}:" /><br>
+            <input type="text" name="name" /> <br>
+            <c:out value="${edit_addressesLabelAddress}:" /><br>
+            <input type="text" name="address" /> <br>
+            <input type="submit" value="${addButton}"/>
         </form>
     </body>
 </html>
