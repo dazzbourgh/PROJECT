@@ -34,6 +34,10 @@ public class AuthFilter implements Filter {
 
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) servletRequest;
+        if(req.getRequestURI().equals("/borisevich.emailgenerator/register.jsp")){
+            req.getRequestDispatcher("/register.jsp").forward(servletRequest, servletResponse);
+            return;
+        }
         if(!req.getRequestURI().equals("/borisevich.emailgenerator/login")){
             LOGGER.debug("requested URI: " + req.getRequestURI());
             if(!checkAuth(req))
