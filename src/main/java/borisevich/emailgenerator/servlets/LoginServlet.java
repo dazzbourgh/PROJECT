@@ -22,17 +22,18 @@ import java.sql.SQLException;
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
     Logger logger;
+
     @Override
     public void init() throws ServletException {
         super.init();
         logger = Logger.getLogger(LoginServlet.class.getName());
     }
 
-    boolean checkUserCorrect(HttpServletRequest req){
+    boolean checkUserCorrect(HttpServletRequest req) {
         logger.debug("Checking user correctness");
-        if(req.getSession().getAttribute("token")==null){
+        if (req.getSession().getAttribute("token") == null) {
             logger.debug("Token is null, checking user...");
-            if(new MySQLUserDAO().checkPassword(new User(req.getParameter("username"), req.getParameter("password")))){
+            if (new MySQLUserDAO().checkPassword(new User(req.getParameter("username"), req.getParameter("password")))) {
                 String token = AuthTokenContainer.getInstance().generateToken();
                 AuthTokenContainer.getInstance().addToken(token);
                 req.getSession().setAttribute("token", token);
@@ -41,16 +42,21 @@ public class LoginServlet extends HttpServlet {
                 return true;
             }
         }
-        logger.info("User not ");
+        logger.info("User not found");
         return false;
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        if(checkUserCorrect(req)){
+        if (checkUserCorrect(req)) {
             req.getRequestDispatcher("/menu.jsp").forward(req, resp);
-        } else{
+        } else {
             req.getRequestDispatcher("/index.jsp").forward(req, resp);
         }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getRequestDispatcher("/index.jsp").forward(req, resp);
     }
 }

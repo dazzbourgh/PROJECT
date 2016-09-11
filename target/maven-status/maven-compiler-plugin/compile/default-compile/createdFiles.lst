@@ -3,6 +3,7 @@ borisevich\emailgenerator\db\EmailDAO.class
 borisevich\emailgenerator\servlets\MyAccountServlet.class
 borisevich\emailgenerator\db\UserDAO.class
 borisevich\emailgenerator\functional\Email.class
+borisevich\emailgenerator\servlets\AddAddressServlet.class
 borisevich\emailgenerator\servlets\GenerateServlet.class
 borisevich\emailgenerator\db\MySQLUserDAO.class
 borisevich\emailgenerator\filters\AuthFilter.class

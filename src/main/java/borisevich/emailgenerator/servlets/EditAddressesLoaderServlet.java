@@ -21,4 +21,10 @@ public class EditAddressesLoaderServlet extends HttpServlet {
         req.setAttribute("addressList", new MySQLAddressDAO().findAll());
         req.getRequestDispatcher("/edit_addresses.jsp").forward(req, resp);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute("addressList", new MySQLAddressDAO().findAll());
+        req.getRequestDispatcher("/edit_addresses.jsp").forward(req, resp);
+    }
 }

@@ -42,7 +42,17 @@ public class MySQLAddressDAO implements AddressDAO {
 
     @Override
     public boolean insertAddress(Address address) {
-        return false;
+        try(DBConnector dbConnector = new DBConnector()){
+            dbConnector.executeUpdate("INSERT INTO addresses " +
+                    "(address,name)" +
+                    "VALUES (\'" + address.getAddress() + "\',\'" + address.getName() +"\');"
+            );
+        } catch (SQLException e){
+            LOGGER.error("Can not insert address");
+            LOGGER.error(e);
+            return false;
+        }
+        return true;
     }
 
     @Override
@@ -56,8 +66,9 @@ public class MySQLAddressDAO implements AddressDAO {
         } catch (SQLException e){
             LOGGER.error("Can not update address");
             LOGGER.error(e);
+            return false;
         }
-        return false;
+        return true;
     }
 
     @Override
