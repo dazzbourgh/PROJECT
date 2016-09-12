@@ -11,7 +11,6 @@ public interface EmailDAO {
     List<Email> findByUserId(int id);
     List<Email> findByAddressId(int id);
 
-    boolean checkPassword(Email email);
     boolean insertEmail(Email email);
     boolean updateEmail(Email email);
     boolean deleteEmail(Email email);

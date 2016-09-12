@@ -48,11 +48,6 @@ public class MySQLEmailDAO implements EmailDAO {
     }
 
     @Override
-    public boolean checkPassword(Email email) {
-        return false;
-    }
-
-    @Override
     public boolean insertEmail(Email email) {
         return false;
     }
