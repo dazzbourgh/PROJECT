@@ -38,4 +38,33 @@ public class MySQLTemplateDAO implements TemplateDAO
         }
         return null;
     }
+
+    @Override
+    public boolean insertTemplate(String template) {
+        try(DBConnector dbConnector = new DBConnector()){
+            dbConnector.executeUpdate("INSERT INTO templates " +
+                    "(text)" +
+                    "VALUES (\'" + template +"\');"
+            );
+        } catch (SQLException e){
+            LOGGER.error("Can not insert address");
+            LOGGER.error(e);
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public boolean deleteTemplate(int template_id) {
+        try(DBConnector dbConnector = new DBConnector()){
+            dbConnector.executeUpdate("DELETE FROM templates " +
+                    "WHERE template_id=\'" + template_id +"\';"
+            );
+        } catch (SQLException e){
+            LOGGER.error("Can not insert address");
+            LOGGER.error(e);
+            return false;
+        }
+        return true;
+    }
 }

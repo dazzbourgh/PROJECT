@@ -12,6 +12,7 @@ public class Generator{
     final static String[] KEYWORDS = {
             "target",
             "info",
+            "name",
             "author",
             "title",
             "style",
@@ -19,6 +20,10 @@ public class Generator{
             "link"
     };
 
+    public Generator(){
+        
+    }
+    
     private Map<String, String> processTrackInfo(String trackInfoString) throws NullPointerException, IllegalArgumentException{
         for(String s : KEYWORDS) {
             if (!trackInfoString.contains(s)){
@@ -39,11 +44,13 @@ public class Generator{
         }
         return returnValue;
     }
+    
     private String loadTemplate(){
         return new MySQLTemplateDAO().getRandomTemplate();
     }
-    public Email[] generateMails(Address[] addressees, String context) throws NullPointerException{
-        Map<String, String> trackInfo = processTrackInfo(context);
+    
+    public Email[] generateMails(Address[] addressees, String pTrackInfo) throws NullPointerException{
+        Map<String, String> trackInfo = processTrackInfo(pTrackInfo);
         Email[] emails = new Email[addressees.length];
         String template = loadTemplate();
         for(int i = 0; i < addressees.length; i++){

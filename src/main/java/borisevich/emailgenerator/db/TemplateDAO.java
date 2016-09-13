@@ -5,4 +5,6 @@ package borisevich.emailgenerator.db;
  */
 public interface TemplateDAO {
     String getRandomTemplate();
+    boolean insertTemplate(String template);
+    boolean deleteTemplate(int template_id);
 }
