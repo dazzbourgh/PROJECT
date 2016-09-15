@@ -18,20 +18,41 @@ public class MySQLTemplateDAO implements TemplateDAO
         int randomNumber = 0;
         try(DBConnector dbConnector = new DBConnector()) {
             ResultSet rs = dbConnector.executeStatement(
-                    "SELECT COUNT(*) FROM" +
+                    "SELECT COUNT(*) FROM " +
                     "templates;"
             );
-            total = rs.getInt("total");
+            rs.next();
+            total = rs.getInt("count(*)");
         } catch (SQLException e){
             LOGGER.error("Can't count from templates");
         }
-        randomNumber = new Random().nextInt(total - 1);
+        //TODO: correct generation of random number
+        randomNumber = 0;//new Random().nextInt(total);
         try(DBConnector dbConnector = new DBConnector()) {
             ResultSet rs = dbConnector.executeStatement(
-                    "SELECT * FROM" +
-                            "templates" +
+                    "SELECT * FROM " +
+                            "templates " +
                             "WHERE template_id=\'" + randomNumber +"\';"
             );
+            rs.next();
+            String returnValue = rs.getString("text");
+            LOGGER.debug("Template is: " + returnValue);
+            return returnValue;
+        } catch (SQLException e){
+            LOGGER.error("Can't get template or extract text");
+        }
+        return null;
+    }
+
+    @Override
+    public String getById(int template_id) {
+        try(DBConnector dbConnector = new DBConnector()) {
+            ResultSet rs = dbConnector.executeStatement(
+                    "SELECT * FROM " +
+                            "templates " +
+                            "WHERE template_id=\'" + template_id +"\';"
+            );
+            rs.next();
             return rs.getString("text");
         } catch (SQLException e){
             LOGGER.error("Can't get template or extract text");
@@ -43,11 +64,11 @@ public class MySQLTemplateDAO implements TemplateDAO
     public boolean insertTemplate(String template) {
         try(DBConnector dbConnector = new DBConnector()){
             dbConnector.executeUpdate("INSERT INTO templates " +
-                    "(text)" +
+                    "(text) " +
                     "VALUES (\'" + template +"\');"
             );
         } catch (SQLException e){
-            LOGGER.error("Can not insert address");
+            LOGGER.error("Can not insert template");
             LOGGER.error(e);
             return false;
         }
@@ -61,7 +82,7 @@ public class MySQLTemplateDAO implements TemplateDAO
                     "WHERE template_id=\'" + template_id +"\';"
             );
         } catch (SQLException e){
-            LOGGER.error("Can not insert address");
+            LOGGER.error("Can not delete template");
             LOGGER.error(e);
             return false;
         }

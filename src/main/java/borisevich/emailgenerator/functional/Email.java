@@ -29,7 +29,7 @@ public class Email{
         this.text = text;
     }
 
-    private Email(){
+    public Email(){
 
     }
 

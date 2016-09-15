@@ -27,7 +27,6 @@ public class GenerationFormLoaderServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Address> addressList = new MySQLAddressDAO().findAll();
-        LOGGER.debug(addressList.get(0).getName());
         req.setAttribute("addressList", addressList);
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/generation.jsp");
         requestDispatcher.forward(req, resp);

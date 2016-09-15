@@ -61,6 +61,7 @@ public class DBConnector implements AutoCloseable{
         poolProperties.setRemoveAbandonedTimeout(60);
         poolProperties.setMinEvictableIdleTimeMillis(30000);
         poolProperties.setMinIdle(1);
+        poolProperties.setMaxIdle(10);
         poolProperties.setLogAbandoned(true);
         poolProperties.setRemoveAbandoned(true);
         poolProperties.setJdbcInterceptors(

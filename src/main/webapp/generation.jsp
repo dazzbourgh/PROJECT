@@ -20,6 +20,11 @@
             <input type="submit" value="${generateButton}"/>
         </form>
 
-        <textarea name="generatedMail" rows="10" cols="30">"${generationLabelGeneratedText}"</textarea>
+        <c:if test="${emailList != null}">
+            <textarea name="generatedMail" rows="10" cols="30">${emailList.get(0).getText()}</textarea>
+        </c:if>
+        <c:if test="${emailList == null}">
+            <textarea name="generatedMail" rows="10" cols="30">${generationLabelGeneratedText}</textarea>
+        </c:if>
     </body>
 </html>
