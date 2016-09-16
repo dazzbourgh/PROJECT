@@ -8,8 +8,14 @@
         <style>
         p    {color: red;}
         </style>
+        <style type="text/css"> <%@include file="/css/styles.css" %> </style>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
+    <div class="container vertical-center bg-blue">
+                <div class="form-group well bg-white" align="center">
         <h1>${registerLabelHeader}</h1>
 
         <c:set var="isLoginIncorrect" value="${isLoginIncorrect}"/>
@@ -22,10 +28,12 @@
             <input type="password" name="password"/><br/>
             <c:out value="${registerLabelRepeatPassword}:" /><br>
             <input type="password" name="password2"/><br/>
-            <input type="submit" value="${registerButtonSubmit}"/>
+            <input type="submit" value="${registerButtonSubmit}" class="btn btn-default btn-margin"/>
         </form>
         <c:if test="${Error != null}">
             <p>"${Error}"</p>
         </c:if>
+        </div>
+        </div>
     </body>
 </html>

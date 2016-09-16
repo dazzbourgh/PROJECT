@@ -1,0 +1,6 @@
+.vertical {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    background-color:#d0e4fe;
+}
