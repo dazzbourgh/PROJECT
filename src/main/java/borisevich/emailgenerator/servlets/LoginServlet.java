@@ -31,7 +31,8 @@ public class LoginServlet extends HttpServlet {
 
     boolean checkUserCorrect(HttpServletRequest req) {
         logger.debug("Checking user correctness");
-        if (req.getSession().getAttribute("token") == null) {
+        Object userToken = req.getSession().getAttribute("token");
+        if (userToken == null) {
             logger.debug("Token is null, checking user...");
             if (new MySQLUserDAO().checkPassword(new User(req.getParameter("username"), req.getParameter("password")))) {
                 String token = AuthTokenContainer.getInstance().generateToken();
@@ -39,6 +40,10 @@ public class LoginServlet extends HttpServlet {
                 req.getSession().setAttribute("token", token);
                 req.getSession().setAttribute("user_id", new MySQLUserDAO().getUserId(req.getParameter("username")));
                 logger.debug("User logged in with token: " + token);
+                return true;
+            }
+        }else{
+            if(AuthTokenContainer.getInstance().containsToken(userToken.toString())){
                 return true;
             }
         }

@@ -1,6 +1,5 @@
 package borisevich.emailgenerator.functional;
 
-import javax.annotation.concurrent.ThreadSafe;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -9,7 +8,6 @@ import java.util.List;
 /**
  * Created by Leonid on 07.09.2016.
  */
-@ThreadSafe
 public class AuthTokenContainer {
     private static List<String> tokenList = new ArrayList<>();
     private static AuthTokenContainer instance;

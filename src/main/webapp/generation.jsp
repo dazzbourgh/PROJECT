@@ -9,7 +9,7 @@
     <body>
         <h1>${generationHeader}</h1>
 
-        <form action="generate" method="GET">
+        <form action="generateServlet" method="GET">
             <c:out value="${generationLabelTrackInfo}:" /><br>
             <input type="text" name="trackInfo"/><br/>
             <c:forEach var="par" items="${addressList}">
@@ -18,6 +18,12 @@
                 <br>
             </c:forEach>
             <input type="submit" value="${generateButton}"/>
+        </form>
+
+        <form action="sendServlet" method="POST">
+            Login: <input type="text" name="emailUsername"/><br/>
+            Password: <input type="password" name="emailPassword"/><br/>
+            <input type="submit" value="${sendButton}"/>
         </form>
 
         <c:if test="${emailList != null}">

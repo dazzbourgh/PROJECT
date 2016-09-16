@@ -44,6 +44,9 @@ public class AuthFilter implements Filter {
                 req.getRequestDispatcher("/index.jsp").forward(servletRequest, servletResponse);
             else{
                 String[] s = req.getRequestURI().split("/");
+                if(s[s.length - 1] == "borisevich.emailgenerator"){
+                    req.getRequestDispatcher("/index.jsp").forward(servletRequest, servletResponse);
+                }
                 req.getRequestDispatcher("/" + s[s.length - 1]).forward(servletRequest, servletResponse);
             }
          }

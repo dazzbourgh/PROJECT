@@ -26,8 +26,7 @@ public class MySQLTemplateDAO implements TemplateDAO
         } catch (SQLException e){
             LOGGER.error("Can't count from templates");
         }
-        //TODO: correct generation of random number
-        randomNumber = 0;//new Random().nextInt(total);
+        randomNumber = new Random().nextInt(total);
         try(DBConnector dbConnector = new DBConnector()) {
             ResultSet rs = dbConnector.executeStatement(
                     "SELECT * FROM " +

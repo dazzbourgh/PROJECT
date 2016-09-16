@@ -16,6 +16,7 @@
 <fmt:message key="generation.label.trackInfo" bundle="${lang}" var="generationLabelTrackInfo"/>
 <fmt:message key="generation.label.generatedText" bundle="${lang}" var="generationLabelGeneratedText"/>
 <fmt:message key="generation.button.generate" bundle="${lang}" var="generateButton"/>
+<fmt:message key="generation.button.send" bundle="${lang}" var="sendButton"/>
 
 <fmt:message key="menu.label.header" bundle="${lang}" var="menuLabelHeader"/>
 <fmt:message key="menu.button.myaccount" bundle="${lang}" var="menuButtonMyAccount"/>

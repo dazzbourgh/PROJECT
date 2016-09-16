@@ -20,7 +20,7 @@ import java.util.Map;
 /**
  * Created by Leonid on 26.08.2016.
  */
-@WebServlet("/generate")
+@WebServlet("/generateServlet")
 public class GenerateServlet extends HttpServlet {
     private static final Logger LOGGER = Logger.getLogger(GenerateServlet.class.getName());
     @Override
@@ -34,7 +34,7 @@ public class GenerateServlet extends HttpServlet {
         Generator generator = new Generator();
         try {
             emailList = generator.generateMails(addresses, trackInfoString);
-            req.setAttribute("emailList", emailList);
+            req.getSession().setAttribute("emailList", emailList);
             LOGGER.debug("FIRST EMAIL: " + emailList.get(0).getText());
         } catch (NullPointerException e){
             LOGGER.error("Error during generation: null pointer exception");
