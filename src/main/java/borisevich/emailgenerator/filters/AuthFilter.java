@@ -18,9 +18,11 @@ public class AuthFilter implements Filter {
     private static final Logger LOGGER = Logger.getLogger(AuthFilter.class.getName());
     private static final String[] ignoreList = {
             "register.jsp",
+            "login.jsp",
             "index.jsp",
-            "language.jsp",
-            "languageChoice"
+            "languageChoice",
+            "register",
+            ""
     };
     private boolean checkAuth(HttpServletRequest req){
         Object token = req.getSession().getAttribute("token");
@@ -48,12 +50,9 @@ public class AuthFilter implements Filter {
         if(!req.getRequestURI().equals("/borisevich.emailgenerator/login")){
             LOGGER.debug("requested URI: " + req.getRequestURI());
             if(!checkAuth(req))
-                req.getRequestDispatcher("/index.jsp").forward(servletRequest, servletResponse);
+                req.getRequestDispatcher("/login.jsp").forward(servletRequest, servletResponse);
             else{
                 String[] s = req.getRequestURI().split("/");
-                if(s[s.length - 1] == "borisevich.emailgenerator"){
-                    req.getRequestDispatcher("/index.jsp").forward(servletRequest, servletResponse);
-                }
                 req.getRequestDispatcher("/" + s[s.length - 1]).forward(servletRequest, servletResponse);
             }
          }

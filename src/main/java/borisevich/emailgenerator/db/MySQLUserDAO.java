@@ -81,10 +81,12 @@ public class MySQLUserDAO implements UserDAO {
 
     @Override
     public boolean insertUser(User user) {
+        LOGGER.debug("Inserting user: " + user.getUsername() + "; " + user.getPassword());
         try (DBConnector dbConnector = new DBConnector()){
             dbConnector.executeUpdate(
-                    "INSERT INTO users (username, password)" +
-                            "VALUES (\'" + user.getUsername() + "\', \'" +
+                    "INSERT INTO users (username, password) " +
+                            "VALUES (\'" +
+                            user.getUsername() + "\', \'" +
                             user.getPassword() + "\');");
             return true;
         } catch (SQLException e) {

@@ -66,7 +66,7 @@ public class RegisterServlet extends HttpServlet {
             return;
         }
         if(checkUsernameIncorrect(req)) {
-            req.setAttribute("Error", "Only letters and numbers are allowed for username.");
+            req.setAttribute("Error", "Only letters and numbers are allowed for username, at least 2 symbols.");
             req.getRequestDispatcher("/register.jsp").forward(req, resp);
             return;
         }
@@ -86,6 +86,6 @@ public class RegisterServlet extends HttpServlet {
             return;
         }
         registerUser(req.getParameter("username"), req.getParameter("password"));
-        req.getRequestDispatcher("/index.jsp").forward(req, resp);
+        req.getRequestDispatcher("/login.jsp").forward(req, resp);
     }
 }

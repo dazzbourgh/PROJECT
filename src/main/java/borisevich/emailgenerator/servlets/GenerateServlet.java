@@ -26,10 +26,21 @@ public class GenerateServlet extends HttpServlet {
     private static final Logger LOGGER = Logger.getLogger(GenerateServlet.class.getName());
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if(req.getParameter("trackInfo") == null){
+            req.setAttribute("Error", "Please, provide track info.");
+            req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
+            return;
+        }
+        if(req.getParameterValues("address") == null){
+            req.setAttribute("Error", "Please, choose recipients.");
+            req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
+            return;
+        }
         List<Email> emailList;
         List<Address> addressList = new ArrayList<>();
         String trackInfoString = req.getParameter("trackInfo");
         String[] addressNames = req.getParameterValues("address");
+
         for(String s : addressNames){
             LOGGER.debug("Address to find: " + s);
             addressList.add(new MySQLAddressDAO().findByName(s));

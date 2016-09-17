@@ -31,7 +31,7 @@
             <input type="submit" value="${registerButtonSubmit}" class="btn btn-default btn-margin"/>
         </form>
         <c:if test="${Error != null}">
-            <p>"${Error}"</p>
+            <p>${Error}</p>
         </c:if>
         </div>
         </div>

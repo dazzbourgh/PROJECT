@@ -23,11 +23,23 @@ public class SendServlet extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<borisevich.emailgenerator.functional.Email> emailList = (List<borisevich.emailgenerator.functional.Email>)req.getSession().getAttribute("emailList");
-        if(emailList == null){
-            req.setAttribute("sendError", "Error: message can not be sent");
-
+        if(req.getSession().getAttribute("emailList") == null){
+            req.setAttribute("Error", "Error: emails were not generated");
+            req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
+            return;
         }
+        if(req.getParameter("emailUsername") == null){
+            req.setAttribute("Error", "Enter username");
+            req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
+            return;
+        }
+        if(req.getParameter("emailPassword") == null){
+            req.setAttribute("Error", "Enter password");
+            req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
+            return;
+        }
+        List<borisevich.emailgenerator.functional.Email> emailList = (List<borisevich.emailgenerator.functional.Email>)req.getSession().getAttribute("emailList");
+
         String username = req.getParameter("emailUsername");
         String password = req.getParameter("emailPassword");
         org.apache.commons.mail.Email email = new SimpleEmail();
@@ -47,7 +59,7 @@ public class SendServlet extends HttpServlet{
         } catch(EmailException e){
             LOGGER.error("Error while sending email:");
             LOGGER.error(e);
-            req.setAttribute("sendError", "Error: message can not be sent");
+            req.setAttribute("Error", "Error: message can not be sent");
         }
         req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
     }

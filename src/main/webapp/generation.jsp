@@ -10,6 +10,9 @@
                                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
                                 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <style>
+            red    {color: red;}
+            </style>
     </head>
     <body>
     <div class="container vertical-center bg-blue">
@@ -40,6 +43,10 @@
         </c:if>
         <c:if test="${emailList == null}">
             <textarea name="generatedMail" rows="10" cols="30">${generationLabelGeneratedText}</textarea>
+        </c:if>
+        <br>
+        <c:if test="${Error != null}">
+                    <red>${Error}</red>
         </c:if>
         </div>
         </div>
