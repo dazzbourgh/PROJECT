@@ -9,6 +9,9 @@
 <c:if test="${sessionScope.language == langRus}">
        <fmt:setBundle basename="text_ru_CYRILLIC" var="lang"/>
 </c:if>
+<c:if test="${sessionScope.language == null}">
+       <fmt:setBundle basename="text_en" var="lang"/>
+</c:if>
 
 <fmt:message key="edit_addresses.label.header" bundle="${lang}" var="headerEditAddresses" />
 <fmt:message key="edit_addresses.button.submitchanges" bundle="${lang}" var="submitChangesButton" />
