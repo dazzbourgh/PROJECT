@@ -16,7 +16,12 @@ import java.io.IOException;
 urlPatterns = {"/*"})
 public class AuthFilter implements Filter {
     private static final Logger LOGGER = Logger.getLogger(AuthFilter.class.getName());
-
+    private static final String[] ignoreList = {
+            "register.jsp",
+            "index.jsp",
+            "language.jsp",
+            "languageChoice"
+    };
     private boolean checkAuth(HttpServletRequest req){
         Object token = req.getSession().getAttribute("token");
         if(token != null){
@@ -34,9 +39,11 @@ public class AuthFilter implements Filter {
 
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) servletRequest;
-        if(req.getRequestURI().equals("/borisevich.emailgenerator/register.jsp")){
-            req.getRequestDispatcher("/register.jsp").forward(servletRequest, servletResponse);
-            return;
+        for(String s : ignoreList){
+            if(req.getRequestURI().equals("/borisevich.emailgenerator/" + s)){
+                req.getRequestDispatcher("/" + s).forward(servletRequest, servletResponse);
+                return;
+            }
         }
         if(!req.getRequestURI().equals("/borisevich.emailgenerator/login")){
             LOGGER.debug("requested URI: " + req.getRequestURI());

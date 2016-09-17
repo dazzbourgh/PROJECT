@@ -1,9 +1,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
-<c:set var="language" value="en-US" scope="session" />
-<fmt:setLocale value="${language}" />
-<fmt:setBundle basename="text_ru_CYRILLIC" var="lang"/>
+<c:set var="langEng" value="english" />
+<c:set var="langRus" value="russian" />
+<c:if test="${sessionScope.language == langEng}">
+       <fmt:setBundle basename="text_en" var="lang"/>
+</c:if>
+<c:if test="${sessionScope.language == langRus}">
+       <fmt:setBundle basename="text_ru_CYRILLIC" var="lang"/>
+</c:if>
 
 <fmt:message key="edit_addresses.label.header" bundle="${lang}" var="headerEditAddresses" />
 <fmt:message key="edit_addresses.button.submitchanges" bundle="${lang}" var="submitChangesButton" />

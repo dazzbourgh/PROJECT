@@ -27,3 +27,11 @@
 
 .with-shadow {
 }
+
+.bg-russian {
+    background-image: url("resources/images/russian_flag.png")
+}
+
+.bg-uk {
+    background-image: url("resources/images/Uk_flag_large.png")
+}

@@ -6,6 +6,7 @@ borisevich\emailgenerator\functional\Address.class
 borisevich\emailgenerator\functional\Generator.class
 borisevich\emailgenerator\servlets\GenerationFormLoaderServlet.class
 borisevich\emailgenerator\db\MySQLAddressDAO.class
+borisevich\emailgenerator\servlets\LanguageChoiceServlet.class
 borisevich\emailgenerator\db\DBConnector.class
 borisevich\emailgenerator\functional\AuthTokenContainer.class
 borisevich\emailgenerator\servlets\EditAddressesLoaderServlet.class
