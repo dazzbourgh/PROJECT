@@ -3,6 +3,7 @@ package borisevich.emailgenerator.db;
 import borisevich.emailgenerator.functional.Email;
 import org.apache.log4j.Logger;
 
+import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -34,7 +35,6 @@ public class MySQLEmailDAO implements EmailDAO {
                 returnValue.add(new Email(rs.getString("addresses.name"), "EMPTY_TEXT"));
             }
             return returnValue;
-            //dbConnector.close();
         } catch (SQLException e){
             LOGGER.debug("ERROR: can't connect to DB");
             LOGGER.debug(e);
@@ -43,22 +43,21 @@ public class MySQLEmailDAO implements EmailDAO {
     }
 
     @Override
-    public List<Email> findByAddressId(int id) {
-        return null;
-    }
-
-    @Override
-    public boolean insertEmail(Email email) {
-        return false;
-    }
-
-    @Override
-    public boolean updateEmail(Email email) {
-        return false;
-    }
-
-    @Override
-    public boolean deleteEmail(Email email) {
+    public boolean insertEmail(Email email, int user_id) {
+        LOGGER.debug("Inserting mail from user_id: " + user_id + "; To: " + email.getAddress());
+        int recipient_id = 0;
+        try (DBConnector dbConnector = new DBConnector()){
+            recipient_id = new MySQLAddressDAO().findByAddress(email.getAddress()).getAddress_id();
+            dbConnector.executeUpdate(
+                    "INSERT INTO emails (send_date, address_id, user_id) " +
+                            "VALUES (NOW(), \'" +
+                            recipient_id + "\', \'" +
+                            user_id + "\');");
+            return true;
+        } catch (SQLException e) {
+            LOGGER.error("SQLException: can't insert new email to DB");
+            LOGGER.debug("Date: " + new Date(new java.util.Date().getTime()).toString() + "; recipient: " + recipient_id);
+        }
         return false;
     }
 }

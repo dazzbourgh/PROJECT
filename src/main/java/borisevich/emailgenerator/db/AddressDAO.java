@@ -9,6 +9,7 @@ import java.util.List;
  */
 public interface AddressDAO {
     Address findByName(String name);
+    Address findByAddress(String address);
     List<Address> findAll();
 
     boolean checkPassword(Address address);

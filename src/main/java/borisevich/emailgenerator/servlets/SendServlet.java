@@ -1,5 +1,6 @@
 package borisevich.emailgenerator.servlets;
 
+import borisevich.emailgenerator.db.MySQLEmailDAO;
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.Email;
 import org.apache.commons.mail.EmailException;
@@ -55,6 +56,7 @@ public class SendServlet extends HttpServlet{
                 email.setMsg(e.getText());
                 email.addTo(e.getAddress());
                 email.send();
+                new MySQLEmailDAO().insertEmail(e, Integer.parseInt(req.getSession().getAttribute("user_id").toString()));
             }
         } catch(EmailException e){
             LOGGER.error("Error while sending email:");

@@ -20,6 +20,7 @@
             <c:set var="i" value="${1}" />
             <c:forEach var="par" items="${emailList}">
                 <c:out value="${i}. To: ${par.getAddress()}"/>
+                <br>
                 <c:set var="i" value="${i+1}" />
             </c:forEach>
     </div>

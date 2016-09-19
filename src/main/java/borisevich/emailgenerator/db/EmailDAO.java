@@ -9,9 +9,6 @@ import java.util.List;
  */
 public interface EmailDAO {
     List<Email> findByUserId(int id);
-    List<Email> findByAddressId(int id);
 
-    boolean insertEmail(Email email);
-    boolean updateEmail(Email email);
-    boolean deleteEmail(Email email);
+    boolean insertEmail(Email email, int user_id);
 }

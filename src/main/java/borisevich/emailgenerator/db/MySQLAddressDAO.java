@@ -31,6 +31,21 @@ public class MySQLAddressDAO implements AddressDAO {
     }
 
     @Override
+    public Address findByAddress(String address) {
+        try (DBConnector dbConnector = new DBConnector()) {
+            ResultSet rs = dbConnector.executeStatement("SELECT * FROM addresses " +
+                    "WHERE address=\'" + address + "\';");
+            rs.next();
+            return new Address(rs.getInt("address_id"),
+                    rs.getString("address"),
+                    rs.getString("name"));
+        } catch (SQLException e) {
+            LOGGER.error("Error while getting address from DB by name");
+        }
+        return null;
+    }
+
+    @Override
     public List<Address> findAll() {
         try (DBConnector dbConnector = new DBConnector()) {
             ResultSet rs = dbConnector.executeStatement("SELECT * FROM addresses");
