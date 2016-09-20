@@ -1,12 +1,10 @@
 package test;
 
-import borisevich.emailgenerator.db.MySQLAddressDAO;
-import borisevich.emailgenerator.db.MySQLTemplateDAO;
+import borisevich.emailgenerator.db.MySQL.MySQLAddressDAO;
+import borisevich.emailgenerator.db.MySQL.MySQLTemplateDAO;
 import borisevich.emailgenerator.functional.Address;
 import borisevich.emailgenerator.functional.Email;
 import borisevich.emailgenerator.functional.Generator;
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;

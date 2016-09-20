@@ -1,6 +1,6 @@
 package borisevich.emailgenerator.servlets;
 
-import borisevich.emailgenerator.db.MySQLAddressDAO;
+import borisevich.emailgenerator.db.MySQL.MySQLAddressDAO;
 import borisevich.emailgenerator.functional.Address;
 
 import javax.servlet.ServletException;

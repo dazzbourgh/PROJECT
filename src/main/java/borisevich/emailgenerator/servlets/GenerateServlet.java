@@ -1,7 +1,6 @@
 package borisevich.emailgenerator.servlets;
 
-import borisevich.emailgenerator.db.DBConnector;
-import borisevich.emailgenerator.db.MySQLAddressDAO;
+import borisevich.emailgenerator.db.MySQL.MySQLAddressDAO;
 import borisevich.emailgenerator.functional.Address;
 import borisevich.emailgenerator.functional.Email;
 import borisevich.emailgenerator.functional.Generator;
@@ -14,9 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by Leonid on 26.08.2016.

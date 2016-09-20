@@ -1,5 +1,6 @@
-package borisevich.emailgenerator.db;
+package borisevich.emailgenerator.db.MySQL;
 
+import borisevich.emailgenerator.db.TemplateDAO;
 import org.apache.log4j.Logger;
 
 import java.sql.ResultSet;

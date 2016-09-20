@@ -1,4 +1,4 @@
-package borisevich.emailgenerator.db;
+package borisevich.emailgenerator.db.MySQL;
 
 import org.apache.log4j.Logger;
 

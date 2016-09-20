@@ -1,10 +1,9 @@
 package test;
 
-import borisevich.emailgenerator.db.DBConnector;
+import borisevich.emailgenerator.db.MySQL.DBConnector;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Ignore;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

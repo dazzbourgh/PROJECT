@@ -1,12 +1,12 @@
-package borisevich.emailgenerator.db;
+package borisevich.emailgenerator.db.MySQL;
 
+import borisevich.emailgenerator.db.EmailDAO;
 import borisevich.emailgenerator.functional.Email;
 import org.apache.log4j.Logger;
 
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;

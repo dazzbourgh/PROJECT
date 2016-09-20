@@ -1,20 +1,16 @@
 package borisevich.emailgenerator.servlets;
 
-import borisevich.emailgenerator.db.DBConnector;
-import borisevich.emailgenerator.db.MySQLUserDAO;
+import borisevich.emailgenerator.db.MySQL.MySQLUserDAO;
 import borisevich.emailgenerator.functional.AuthTokenContainer;
 import borisevich.emailgenerator.functional.User;
 import org.apache.log4j.Logger;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 /**
  * Created by Leonid on 24.08.2016.

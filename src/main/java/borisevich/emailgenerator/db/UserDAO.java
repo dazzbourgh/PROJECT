@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by Leonid on 05.09.2016.
  */
-interface UserDAO {
+public interface UserDAO {
     List<User> findByName(String name);
 
     int getUserId(String name);

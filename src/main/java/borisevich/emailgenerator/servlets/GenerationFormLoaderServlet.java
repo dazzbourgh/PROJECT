@@ -1,7 +1,6 @@
 package borisevich.emailgenerator.servlets;
 
-import borisevich.emailgenerator.db.DBConnector;
-import borisevich.emailgenerator.db.MySQLAddressDAO;
+import borisevich.emailgenerator.db.MySQL.MySQLAddressDAO;
 import borisevich.emailgenerator.functional.Address;
 import org.apache.log4j.Logger;
 
@@ -12,9 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**

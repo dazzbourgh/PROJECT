@@ -1,9 +1,7 @@
 package borisevich.emailgenerator.functional;
 
-import borisevich.emailgenerator.db.MySQLTemplateDAO;
-import borisevich.emailgenerator.functional.Email;
+import borisevich.emailgenerator.db.MySQL.MySQLTemplateDAO;
 
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Generator{
