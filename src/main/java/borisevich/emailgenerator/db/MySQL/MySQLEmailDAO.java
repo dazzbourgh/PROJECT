@@ -1,7 +1,7 @@
 package borisevich.emailgenerator.db.MySQL;
 
 import borisevich.emailgenerator.db.EmailDAO;
-import borisevich.emailgenerator.functional.Email;
+import borisevich.emailgenerator.model.Email;
 import org.apache.log4j.Logger;
 
 import java.sql.Date;

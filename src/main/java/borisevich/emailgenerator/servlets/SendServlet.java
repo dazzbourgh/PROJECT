@@ -1,8 +1,8 @@
 package borisevich.emailgenerator.servlets;
 
 import borisevich.emailgenerator.db.EmailDAO;
-import borisevich.emailgenerator.db.MySQL.MySQLEmailDAO;
 import borisevich.emailgenerator.listeners.DbInitListener;
+import borisevich.emailgenerator.model.Email;
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
@@ -42,7 +42,7 @@ public class SendServlet extends HttpServlet{
             req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
             return;
         }
-        List<borisevich.emailgenerator.functional.Email> emailList = (List<borisevich.emailgenerator.functional.Email>)req.getSession().getAttribute("emailList");
+        List<Email> emailList = (List<Email>)req.getSession().getAttribute("emailList");
 
         String username = req.getParameter("emailUsername");
         String password = req.getParameter("emailPassword");
@@ -55,7 +55,7 @@ public class SendServlet extends HttpServlet{
         try {
             email.setFrom(username + "@gmail.com");
             email.setSubject("TestMail");
-            for (borisevich.emailgenerator.functional.Email e : emailList) {
+            for (Email e : emailList) {
                 email.setMsg(e.getText());
                 email.addTo(e.getAddress());
                 email.send();

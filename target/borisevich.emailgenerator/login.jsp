@@ -1,5 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib prefix="dz" uri="/logTag.tld" %>
+<%@ taglib prefix="dz" uri="/WEB-INF/logTag.tld" %>
 <jsp:directive.include file="locale.jsp" />
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <dz:log />
+    <dz:log />
         <div class="container vertical-center bg-blue">
             <div class="form-group well bg-white" align="center">
                 <fmt:message key="index.label.header" bundle="${lang}" var="header1" />

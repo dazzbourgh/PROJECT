@@ -2,8 +2,8 @@ package test;
 
 import borisevich.emailgenerator.db.MySQL.MySQLAddressDAO;
 import borisevich.emailgenerator.db.MySQL.MySQLTemplateDAO;
-import borisevich.emailgenerator.functional.Address;
-import borisevich.emailgenerator.functional.Email;
+import borisevich.emailgenerator.model.Address;
+import borisevich.emailgenerator.model.Email;
 import borisevich.emailgenerator.functional.Generator;
 import org.junit.Test;
 

@@ -1,9 +1,8 @@
 package borisevich.emailgenerator.servlets;
 
 import borisevich.emailgenerator.db.AddressDAO;
-import borisevich.emailgenerator.db.MySQL.MySQLAddressDAO;
-import borisevich.emailgenerator.functional.Address;
-import borisevich.emailgenerator.functional.Email;
+import borisevich.emailgenerator.model.Address;
+import borisevich.emailgenerator.model.Email;
 import borisevich.emailgenerator.functional.Generator;
 import borisevich.emailgenerator.listeners.DbInitListener;
 import org.apache.log4j.Logger;

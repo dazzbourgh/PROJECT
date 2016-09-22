@@ -1,6 +1,6 @@
 package borisevich.emailgenerator.db;
 
-import borisevich.emailgenerator.functional.User;
+import borisevich.emailgenerator.model.User;
 
 import java.util.List;
 

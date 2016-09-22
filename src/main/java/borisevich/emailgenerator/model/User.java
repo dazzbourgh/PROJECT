@@ -1,4 +1,4 @@
-package borisevich.emailgenerator.functional;
+package borisevich.emailgenerator.model;
 
 /**
  * Created by Leonid on 05.09.2016.

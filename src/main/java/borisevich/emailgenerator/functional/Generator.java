@@ -1,6 +1,8 @@
 package borisevich.emailgenerator.functional;
 
 import borisevich.emailgenerator.db.MySQL.MySQLTemplateDAO;
+import borisevich.emailgenerator.model.Address;
+import borisevich.emailgenerator.model.Email;
 
 import java.util.*;
 

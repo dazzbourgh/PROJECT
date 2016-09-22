@@ -1,4 +1,4 @@
-package borisevich.emailgenerator.functional;
+package borisevich.emailgenerator.model;
 
 import java.util.Date;
 
