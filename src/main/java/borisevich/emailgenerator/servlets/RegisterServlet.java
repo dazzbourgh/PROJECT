@@ -1,7 +1,9 @@
 package borisevich.emailgenerator.servlets;
 
 import borisevich.emailgenerator.db.MySQL.MySQLUserDAO;
+import borisevich.emailgenerator.db.UserDAO;
 import borisevich.emailgenerator.functional.User;
+import borisevich.emailgenerator.listeners.DbInitListener;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -40,7 +42,8 @@ public class RegisterServlet extends HttpServlet {
         return false;
     }
     private boolean checkUserAlreadyExists(HttpServletRequest req){
-        if(new MySQLUserDAO().findByName(req.getParameter("username")).equals(Collections.emptyList()))
+        UserDAO userDAO = (UserDAO)req.getServletContext().getAttribute(DbInitListener.USER_DAO);
+        if(userDAO.findByName(req.getParameter("username")).equals(Collections.emptyList()))
             return false;
         return true;
     }
@@ -50,8 +53,9 @@ public class RegisterServlet extends HttpServlet {
         }
         return true;
     }
-    private void registerUser(String username, String password){
-        new MySQLUserDAO().insertUser(new User(username, password));
+    private void registerUser(HttpServletRequest req, String username, String password){
+        UserDAO userDAO = (UserDAO)req.getServletContext().getAttribute(DbInitListener.USER_DAO);
+        userDAO.insertUser(new User(username, password));
     }
 
     @Override
@@ -81,7 +85,7 @@ public class RegisterServlet extends HttpServlet {
             req.getRequestDispatcher("/register.jsp").forward(req, resp);
             return;
         }
-        registerUser(req.getParameter("username"), req.getParameter("password"));
+        registerUser(req, req.getParameter("username"), req.getParameter("password"));
         req.getRequestDispatcher("/login.jsp").forward(req, resp);
     }
 }

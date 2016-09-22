@@ -1,9 +1,11 @@
 package borisevich.emailgenerator.servlets;
 
+import borisevich.emailgenerator.db.AddressDAO;
 import borisevich.emailgenerator.db.MySQL.MySQLAddressDAO;
 import borisevich.emailgenerator.functional.Address;
 import borisevich.emailgenerator.functional.Email;
 import borisevich.emailgenerator.functional.Generator;
+import borisevich.emailgenerator.listeners.DbInitListener;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -23,6 +25,7 @@ public class GenerateServlet extends HttpServlet {
     private static final Logger LOGGER = Logger.getLogger(GenerateServlet.class.getName());
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        AddressDAO addressDAO = (AddressDAO)req.getServletContext().getAttribute(DbInitListener.ADDRESS_DAO);
         if(req.getParameter("trackInfo") == null){
             req.setAttribute("Error", "Please, provide track info.");
             req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
@@ -40,7 +43,7 @@ public class GenerateServlet extends HttpServlet {
 
         for(String s : addressNames){
             LOGGER.debug("Address to find: " + s);
-            addressList.add(new MySQLAddressDAO().findByName(s));
+            addressList.add(addressDAO.findByName(s));
         }
         Address[] addresses = new Address[addressList.size()];
         addressList.toArray(addresses);

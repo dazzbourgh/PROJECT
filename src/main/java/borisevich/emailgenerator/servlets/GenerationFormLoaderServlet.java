@@ -1,7 +1,9 @@
 package borisevich.emailgenerator.servlets;
 
+import borisevich.emailgenerator.db.AddressDAO;
 import borisevich.emailgenerator.db.MySQL.MySQLAddressDAO;
 import borisevich.emailgenerator.functional.Address;
+import borisevich.emailgenerator.listeners.DbInitListener;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -22,7 +24,8 @@ public class GenerationFormLoaderServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Address> addressList = new MySQLAddressDAO().findAll();
+        AddressDAO addressDAO = (AddressDAO)req.getServletContext().getAttribute(DbInitListener.ADDRESS_DAO);
+        List<Address> addressList = addressDAO.findAll();
         req.setAttribute("addressList", addressList);
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/generation.jsp");
         requestDispatcher.forward(req, resp);

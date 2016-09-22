@@ -2,126 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="039ac618-4083-4e90-bb25-2bd7b879caa5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/AddressDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/DBConnector.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/EmailDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/MySQLAddressDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/MySQLEmailDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/MySQLTemplateDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/MySQLUserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/TemplateDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/db/UserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/filters/AuthFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/functional/Address.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/functional/AuthTokenContainer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/functional/Email.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/functional/Generator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/functional/Sender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/functional/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/AddAddressServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/EditAddressesLoaderServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/EditAddressesServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/GenerateServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/LanguageChoiceServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/LoginServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/MyAccountServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/RegisterServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/borisevich/emailgenerator/servlets/SendServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/convert.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/images/Uk_flag_large.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/images/russian_flag.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/template.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/test/TestDBAddUser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/test/TestGenerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/text_en.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/text_ru.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/classes/text_ru_CYRILLIC.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/activation-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/bootstrap-3.3.7-1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/commons-email-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/javax.servlet-api-3.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/jquery-1.11.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/jsr250-api-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/junit-4.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/mail-1.4.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/mysql-connector-java-5.1.39.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/tomcat-jdbc-9.0.0.M9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/lib/tomcat-juli-9.0.0.M9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/edit_addresses.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/generation.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/locale.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/menu.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/myaccount.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/borisevich.emailgenerator/register.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/AddressDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/DBConnector.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/EmailDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/MySQLAddressDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/MySQLEmailDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/MySQLTemplateDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/MySQLUserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/TemplateDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/db/UserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/filters/AuthFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/functional/Address.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/functional/AuthTokenContainer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/functional/Email.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/functional/Generator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/functional/Sender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/functional/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/AddAddressServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/EditAddressesLoaderServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/EditAddressesServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/GenerateServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/LanguageChoiceServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/LoginServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/MyAccountServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/RegisterServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/borisevich/emailgenerator/servlets/SendServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/convert.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/Uk_flag_large.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/russian_flag.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/template.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/test/TestDBAddUser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/test/TestGenerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/text_en.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/text_ru.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/text_ru_CYRILLIC.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/DBConnector.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/DBConnector.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLAddressDAO.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/MySQLAddressDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLEmailDAO.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/MySQLEmailDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLTemplateDAO.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/MySQLTemplateDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLUserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/MySQLUserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/Презентация.pptx" afterPath="$PROJECT_DIR$/documentation/Презентация.pptx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/listeners/DbInitListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Generator.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Generator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/AddAddressServlet.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/AddAddressServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/EditAddressesLoaderServlet.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/EditAddressesLoaderServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/EditAddressesServlet.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/EditAddressesServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerateServlet.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerateServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/RegisterServlet.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/RegisterServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/SendServlet.java" afterPath="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/SendServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/TestDBAddUser.java" afterPath="$PROJECT_DIR$/src/main/java/test/TestDBAddUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/TestGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/test/TestGenerator.java" />
     </list>
     <ignored path="Email Generator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -144,33 +34,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="TestGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/test/TestGenerator.java">
+      <file leaf-file-name="DBConnector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/DBConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1064">
-              <caret line="40" column="30" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="143" />
+            <state relative-caret-position="631">
+              <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSourceProxy.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jdbc/9.0.0.M9/tomcat-jdbc-9.0.0.M9-sources.jar!/org/apache/tomcat/jdbc/pool/DataSourceProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="265" column="16" selection-start-line="265" selection-start-column="16" selection-end-line="265" selection-end-column="16" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1129#1130#0" expanded="false" />
-                <element signature="e#1185#1186#0" expanded="false" />
+                <element signature="e#8359#8360#0" expanded="true" />
+                <element signature="e#8411#8412#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthTokenContainer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/AuthTokenContainer.java">
+      <file leaf-file-name="SendServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/SendServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="418">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSource.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jdbc/9.0.0.M9/tomcat-jdbc-9.0.0.M9-sources.jar!/org/apache/tomcat/jdbc/pool/DataSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#781#782#0" expanded="false" />
-                <element signature="e#817#818#0" expanded="false" />
-                <element signature="e#874#875#0" expanded="false" />
-                <element signature="e#913#914#0" expanded="false" />
-                <element signature="e#1116#1117#0" expanded="false" />
-                <element signature="e#1158#1159#0" expanded="false" />
+                <element signature="e#1896#1897#0" expanded="true" />
+                <element signature="e#1919#1920#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyAccountServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbInitListener.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/listeners/DbInitListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,48 +105,18 @@
       <file leaf-file-name="LanguageChoiceServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LanguageChoiceServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
+            <state relative-caret-position="380">
               <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/UserDAO.java">
+      <file leaf-file-name="RegisterServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/RegisterServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TemplateDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/TemplateDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myaccount.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/myaccount.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmailDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/EmailDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            <state relative-caret-position="-765">
+              <caret line="44" column="15" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -229,33 +125,18 @@
       <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="34" column="65" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="13">
+              <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServletRequest.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-sources.jar!/javax/servlet/ServletRequest.java">
+      <file leaf-file-name="MySQLEmailDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/MySQLEmailDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27208">
-              <caret line="773" column="24" selection-start-line="773" selection-start-column="24" selection-end-line="773" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#29902#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddressDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/AddressDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="1862">
+              <caret line="58" column="120" selection-start-line="58" selection-start-column="120" selection-end-line="58" selection-end-column="120" />
               <folding />
             </state>
           </provider>
@@ -279,10 +160,12 @@
       <projects_view />
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/DBConnector.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/IDBConnector.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/TestDBAddUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLLabelDAO.java" />
@@ -290,9 +173,6 @@
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Address.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/EditAddressesLoaderServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/AddAddressServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/EditAddressesServlet.java" />
         <option value="$PROJECT_DIR$/src/main/resources/text_ru_UTF-8.properties" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Sender.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/DBConnector.java" />
@@ -301,7 +181,6 @@
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Email.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Generator.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/TestGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/TestRandom.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLTemplateDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/text_en.properties" />
@@ -319,20 +198,25 @@
         <option value="$PROJECT_DIR$/src/main/webapp/locale.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerateServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/generation.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLUserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/filters/AuthFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/RegisterServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/EmailDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/SendServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLAddressDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/AddressDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQLEmailDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/myaccount.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LanguageChoiceServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/AddAddressServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/EditAddressesLoaderServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/EditAddressesServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerateServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/RegisterServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/SendServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/listeners/DbInitListener.java" />
       </list>
     </option>
   </component>
@@ -382,9 +266,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -633,6 +517,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="listeners" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="emailgenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="functional" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -755,7 +669,7 @@
     <property name="project.structure.side.proportion" value="0.12771234" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-petclinic" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -1216,7 +1130,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1102" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1225,7 +1139,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47630057" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47630057" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1266,7 +1180,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28208092" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47630057" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -1301,56 +1215,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="2224" column="18" selection-start-line="2224" selection-start-column="18" selection-end-line="2224" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="210" column="12" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-sources.jar!/javax/servlet/http/HttpSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="363" column="16" selection-start-line="363" selection-start-column="16" selection-end-line="363" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5244">
-          <caret line="163" column="11" selection-start-line="163" selection-start-column="11" selection-end-line="163" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/DBConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2128">
-          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestRandom.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Sender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-email/1.2/commons-email-1.2.jar!/org/apache/commons/mail/Email.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1387,23 +1251,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/text_ru.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/text_ru_CYRILLIC.properties">
       <provider editor-type-id="ResourceBundle">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/text_ru_CYRILLIC.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/vertical.css" />
@@ -1430,24 +1294,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/generation.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1748">
           <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerateServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1465,18 +1315,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/RegisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2698">
-          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2736">
           <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1484,7 +1326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1496,13 +1337,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/text_en.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1178">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="22" />
         </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/locale.jsp">
@@ -1519,20 +1360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/EditAddressesLoaderServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Email.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1540,31 +1367,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/MySQLUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2888">
-          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="94" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1596">
           <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/SendServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1572,23 +1378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="988">
           <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2338#2339#0" expanded="false" />
-            <element signature="e#2366#2367#0" expanded="false" />
-            <element signature="e#3540#3541#0" expanded="false" />
-            <element signature="e#3568#3569#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/MySQLEmailDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1862">
-          <caret line="58" column="120" selection-start-line="58" selection-start-column="120" selection-end-line="58" selection-end-column="120" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1596,7 +1385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
           <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1604,20 +1392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27208">
           <caret line="773" column="24" selection-start-line="773" selection-start-column="24" selection-end-line="773" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#29902#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="34" column="65" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1625,11 +1399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1064">
           <caret line="40" column="30" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="143" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1129#1130#0" expanded="false" />
-            <element signature="e#1185#1186#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1637,23 +1406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#817#818#0" expanded="false" />
-            <element signature="e#874#875#0" expanded="false" />
-            <element signature="e#913#914#0" expanded="false" />
-            <element signature="e#1116#1117#0" expanded="false" />
-            <element signature="e#1158#1159#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LanguageChoiceServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1661,7 +1413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1669,7 +1420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1677,15 +1427,169 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/functional/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/sql/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3002">
+          <caret line="103" column="14" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#72195#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/AddressDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="228">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/MySQLUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2508">
+          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/AddAddressServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="22" column="8" selection-start-line="21" selection-start-column="7" selection-end-line="22" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/EditAddressesLoaderServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/EditAddressesServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerateServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/GenerationFormLoaderServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LanguageChoiceServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/MySQLEmailDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1862">
+          <caret line="58" column="120" selection-start-line="58" selection-start-column="120" selection-end-line="58" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jdbc/9.0.0.M9/tomcat-jdbc-9.0.0.M9-sources.jar!/org/apache/tomcat/jdbc/pool/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding>
+            <element signature="e#1896#1897#0" expanded="true" />
+            <element signature="e#1919#1920#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/MyAccountServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/db/MySQL/DBConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jdbc/9.0.0.M9/tomcat-jdbc-9.0.0.M9-sources.jar!/org/apache/tomcat/jdbc/pool/DataSourceProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="265" column="16" selection-start-line="265" selection-start-column="16" selection-end-line="265" selection-end-column="16" />
+          <folding>
+            <element signature="e#8359#8360#0" expanded="true" />
+            <element signature="e#8411#8412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/SendServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/servlets/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765">
+          <caret line="44" column="15" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/borisevich/emailgenerator/listeners/DbInitListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

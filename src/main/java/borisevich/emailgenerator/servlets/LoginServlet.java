@@ -1,8 +1,10 @@
 package borisevich.emailgenerator.servlets;
 
 import borisevich.emailgenerator.db.MySQL.MySQLUserDAO;
+import borisevich.emailgenerator.db.UserDAO;
 import borisevich.emailgenerator.functional.AuthTokenContainer;
 import borisevich.emailgenerator.functional.User;
+import borisevich.emailgenerator.listeners.DbInitListener;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -26,15 +28,17 @@ public class LoginServlet extends HttpServlet {
     }
 
     boolean checkUserCorrect(HttpServletRequest req) {
+        UserDAO userDAO = (UserDAO)req.getServletContext().getAttribute(DbInitListener.USER_DAO);
+
         logger.debug("Checking user correctness");
         Object userToken = req.getSession().getAttribute("token");
         if (userToken == null) {
             logger.debug("Token is null, checking user...");
-            if (new MySQLUserDAO().checkPassword(new User(req.getParameter("username"), req.getParameter("password")))) {
+            if (userDAO.checkPassword(new User(req.getParameter("username"), req.getParameter("password")))) {
                 String token = AuthTokenContainer.getInstance().generateToken();
                 AuthTokenContainer.getInstance().addToken(token);
                 req.getSession().setAttribute("token", token);
-                req.getSession().setAttribute("user_id", new MySQLUserDAO().getUserId(req.getParameter("username")));
+                req.getSession().setAttribute("user_id", userDAO.getUserId(req.getParameter("username")));
                 logger.debug("User logged in with token: " + token);
                 return true;
             }

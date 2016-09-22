@@ -1,6 +1,8 @@
 package borisevich.emailgenerator.servlets;
 
+import borisevich.emailgenerator.db.EmailDAO;
 import borisevich.emailgenerator.db.MySQL.MySQLEmailDAO;
+import borisevich.emailgenerator.listeners.DbInitListener;
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
@@ -23,6 +25,8 @@ public class SendServlet extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        EmailDAO emailDAO = (EmailDAO)req.getServletContext().getAttribute(DbInitListener.EMAIL_DAO);
+
         if(req.getSession().getAttribute("emailList") == null){
             req.setAttribute("Error", "Error: emails were not generated");
             req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
@@ -55,7 +59,7 @@ public class SendServlet extends HttpServlet{
                 email.setMsg(e.getText());
                 email.addTo(e.getAddress());
                 email.send();
-                new MySQLEmailDAO().insertEmail(e, Integer.parseInt(req.getSession().getAttribute("user_id").toString()));
+                emailDAO.insertEmail(e, Integer.parseInt(req.getSession().getAttribute("user_id").toString()));
             }
         } catch(EmailException e){
             LOGGER.error("Error while sending email:");

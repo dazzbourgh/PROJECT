@@ -1,7 +1,9 @@
 package borisevich.emailgenerator.servlets;
 
+import borisevich.emailgenerator.db.AddressDAO;
 import borisevich.emailgenerator.db.MySQL.MySQLAddressDAO;
 import borisevich.emailgenerator.functional.Address;
+import borisevich.emailgenerator.listeners.DbInitListener;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,7 +19,8 @@ import java.io.IOException;
 public class AddAddressServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        new MySQLAddressDAO().insertAddress(
+        AddressDAO addressDAO = (AddressDAO)req.getServletContext().getAttribute(DbInitListener.ADDRESS_DAO);
+        addressDAO.insertAddress(
                 new Address(
                         0,
                         req.getParameter("address"),

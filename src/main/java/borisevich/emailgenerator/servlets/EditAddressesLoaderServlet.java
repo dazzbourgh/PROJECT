@@ -1,6 +1,8 @@
 package borisevich.emailgenerator.servlets;
 
+import borisevich.emailgenerator.db.AddressDAO;
 import borisevich.emailgenerator.db.MySQL.MySQLAddressDAO;
+import borisevich.emailgenerator.listeners.DbInitListener;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,13 +18,13 @@ import java.io.IOException;
 public class EditAddressesLoaderServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("addressList", new MySQLAddressDAO().findAll());
+        AddressDAO addressDAO = (AddressDAO)req.getServletContext().getAttribute(DbInitListener.ADDRESS_DAO);
+        req.setAttribute("addressList", addressDAO.findAll());
         req.getRequestDispatcher("/edit_addresses.jsp").forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("addressList", new MySQLAddressDAO().findAll());
-        req.getRequestDispatcher("/edit_addresses.jsp").forward(req, resp);
+        doGet(req, resp);
     }
 }
