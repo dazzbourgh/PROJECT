@@ -4,6 +4,7 @@ borisevich\emailgenerator\functional\Email.class
 borisevich\emailgenerator\functional\Sender.class
 borisevich\emailgenerator\servlets\GenerateServlet.class
 borisevich\emailgenerator\db\MySQL\MySQLAddressDAO.class
+borisevich\emailgenerator\handlers\LogTag.class
 borisevich\emailgenerator\functional\Address.class
 borisevich\emailgenerator\functional\Generator.class
 borisevich\emailgenerator\servlets\GenerationFormLoaderServlet.class

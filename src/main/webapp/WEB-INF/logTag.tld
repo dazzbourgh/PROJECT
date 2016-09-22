@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+<tlibversion>1.1</tlibversion>
+<shortname>log</shortname>
+<uri>/WEB-INF/nametagdesc.tld</uri>
+<info>
+    Logging tag
+</info>
+<tag>
+    <name>log</name>
+    <tag-class>borisevich.emailgenerator.handlers.LogTag</tag-class>
+    <body-content>empty</body-content>
+</tag>
+</taglib>

@@ -1,0 +1,8 @@
+<taglib>
+    <short-name>Log Tag TLD</short-name>
+    <tag>
+        <name>log</name>
+        <tag-class>borisevich.emailgenerator.handlers.LogTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+</taglib>
