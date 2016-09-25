@@ -1,1 +1,0 @@
-"C:\Program Files\Java\jdk1.8.0_25\bin\native2ascii.exe" -encoding UTF8 C:\Users\Leonid\Documents\PROJECT\src\main\resources\text_ru.properties C:\Users\Leonid\Documents\PROJECT\src\main\resources\text_ru_CYRILLIC.properties
