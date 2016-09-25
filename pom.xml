@@ -81,7 +81,7 @@
 
   </dependencies>
   <build>
-    <finalName>borisevich.emailgenerator</finalName>
+    <finalName>ru.borisevich.emailgenerator</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.tomcat.maven</groupId>
@@ -92,7 +92,7 @@
           <server>TomcatServer</server>
           <username>upload</username>
           <password>password</password>
-          <path>/borisevich.emailgenerator</path>
+          <path>/ru.borisevich.emailgenerator</path>
         </configuration>
       </plugin>
       <plugin>

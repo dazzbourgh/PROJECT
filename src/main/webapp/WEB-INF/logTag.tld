@@ -9,7 +9,7 @@ http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
 <uri>/WEB-INF/logTag.tld</uri>
 <tag>
     <name>log</name>
-    <tag-class>borisevich.emailgenerator.handlers.LogTag</tag-class>
+    <tag-class>ru.borisevich.emailgenerator.handlers.LogTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
         <name>log</name>

@@ -1,6 +1,6 @@
 package test;
 
-import borisevich.emailgenerator.db.MySQL.DBConnector;
+import ru.borisevich.emailgenerator.db.mysql.DBConnector;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
