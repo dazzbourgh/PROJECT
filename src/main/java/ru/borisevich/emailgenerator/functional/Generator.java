@@ -3,11 +3,12 @@ package ru.borisevich.emailgenerator.functional;
 import ru.borisevich.emailgenerator.db.mysql.MySQLTemplateDAO;
 import ru.borisevich.emailgenerator.model.Address;
 import ru.borisevich.emailgenerator.model.Email;
+import ru.borisevich.emailgenerator.model.Template;
 
 import java.util.*;
 
 public class Generator{
-    final static String[] KEYWORDS = {
+    public final static String[] KEYWORDS = {
             "TARGET",
             "INFO",
             "NAME",
@@ -44,17 +45,17 @@ public class Generator{
         return returnValue;
     }
     
-    private String loadTemplate(){
+    private Template loadTemplate(){
         return new MySQLTemplateDAO().getRandomTemplate();
     }
     
     public List<Email> generateMails(Address[] addressees, String pTrackInfo) throws NullPointerException{
         Map<String, String> trackInfo = processTrackInfo(pTrackInfo);
         Email[] emails = new Email[addressees.length];
-        String template = loadTemplate();
+        Template template = loadTemplate();
         List<Email> returnValue = new ArrayList<>();
         for(int i = 0; i < addressees.length; i++){
-            String text = new String(template);
+            String text = new String(template.getText());
             for(Map.Entry<String, String> entry : trackInfo.entrySet()){
                 text = text.replace(entry.getKey(), entry.getValue());
             }

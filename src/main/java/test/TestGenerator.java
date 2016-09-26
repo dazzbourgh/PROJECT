@@ -6,6 +6,7 @@ import ru.borisevich.emailgenerator.model.Address;
 import ru.borisevich.emailgenerator.model.Email;
 import ru.borisevich.emailgenerator.functional.Generator;
 import org.junit.Test;
+import ru.borisevich.emailgenerator.model.Template;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -27,13 +28,13 @@ public class TestGenerator {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        new MySQLTemplateDAO().insertTemplate(text);
+        new MySQLTemplateDAO().insertTemplate(new Template(0, text));
         //template = new MySQLTemplateDAO().getById(0);
         System.out.println(text);
     }
     //@After
     public void destroy(){
-        new MySQLTemplateDAO().deleteTemplate(0);
+        new MySQLTemplateDAO().deleteTemplate(new Template(0, ""));
     }
 
     @Test

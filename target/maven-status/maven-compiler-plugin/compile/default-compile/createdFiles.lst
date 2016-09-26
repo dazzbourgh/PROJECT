@@ -12,6 +12,9 @@ ru\borisevich\emailgenerator\servlets\AddAddressServlet.class
 ru\borisevich\emailgenerator\db\mysql\DBConnector.class
 ru\borisevich\emailgenerator\db\TemplateDAO.class
 ru\borisevich\emailgenerator\db\AddressDAO.class
+ru\borisevich\emailgenerator\servlets\EditTemplatesServlet.class
+ru\borisevich\emailgenerator\servlets\AddTemplateServlet.class
+ru\borisevich\emailgenerator\servlets\EditTemplatesLoaderServlet.class
 ru\borisevich\emailgenerator\listeners\DbInitListener.class
 ru\borisevich\emailgenerator\servlets\EditAddressesServlet.class
 ru\borisevich\emailgenerator\model\Address.class
@@ -24,6 +27,7 @@ ru\borisevich\emailgenerator\model\Email.class
 ru\borisevich\emailgenerator\model\Template.class
 ru\borisevich\emailgenerator\servlets\GenerateServlet.class
 ru\borisevich\emailgenerator\filters\AuthFilter.class
+ru\borisevich\emailgenerator\servlets\AbstractTemplateServlet.class
 ru\borisevich\emailgenerator\servlets\MyAccountServlet.class
 ru\borisevich\emailgenerator\db\mysql\MySQLTemplateDAO.class
 test\TestDBAddUser.class

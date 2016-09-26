@@ -2,9 +2,13 @@ package ru.borisevich.emailgenerator.db.mysql;
 
 import ru.borisevich.emailgenerator.db.TemplateDAO;
 import org.apache.log4j.Logger;
+import ru.borisevich.emailgenerator.model.Template;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -14,7 +18,7 @@ public class MySQLTemplateDAO implements TemplateDAO
 {
     private static final Logger LOGGER = Logger.getLogger(MySQLTemplateDAO.class.getName());
     @Override
-    public String getRandomTemplate() {
+    public Template getRandomTemplate() {
         int total = 0;
         int randomNumber = 0;
         try(DBConnector dbConnector = new DBConnector()) {
@@ -35,7 +39,10 @@ public class MySQLTemplateDAO implements TemplateDAO
                             "WHERE template_id=\'" + randomNumber +"\';"
             );
             rs.next();
-            String returnValue = rs.getString("text");
+            Template returnValue = new Template(
+                    rs.getInt("template_id"),
+                    rs.getString("text")
+            );
             LOGGER.debug("Template is: " + returnValue);
             return returnValue;
         } catch (SQLException e){
@@ -45,7 +52,7 @@ public class MySQLTemplateDAO implements TemplateDAO
     }
 
     @Override
-    public String getById(int template_id) {
+    public Template getById(int template_id) {
         try(DBConnector dbConnector = new DBConnector()) {
             ResultSet rs = dbConnector.executeStatement(
                     "SELECT * FROM " +
@@ -53,7 +60,10 @@ public class MySQLTemplateDAO implements TemplateDAO
                             "WHERE template_id=\'" + template_id +"\';"
             );
             rs.next();
-            return rs.getString("text");
+            return new Template(
+                    rs.getInt("template_id"),
+                    rs.getString("text")
+            );
         } catch (SQLException e){
             LOGGER.error("Can't get template or extract text");
         }
@@ -61,7 +71,28 @@ public class MySQLTemplateDAO implements TemplateDAO
     }
 
     @Override
-    public boolean insertTemplate(String template) {
+    public List<Template> getAll() {
+        List<Template> returnValue = new ArrayList<>();
+        try(DBConnector dbConnector = new DBConnector()) {
+            ResultSet rs = dbConnector.executeStatement(
+                    "SELECT * FROM " +
+                            "templates;"
+            );
+            while(rs.next()){
+                returnValue.add(new Template(
+                        rs.getInt("template_id"),
+                        rs.getString("text")
+                ));
+            }
+            return returnValue;
+        } catch (SQLException e){
+            LOGGER.error("Can't get template or extract text");
+        }
+        return Collections.EMPTY_LIST;
+    }
+
+    @Override
+    public boolean insertTemplate(Template template) {
         try(DBConnector dbConnector = new DBConnector()){
             dbConnector.executeUpdate("INSERT INTO templates " +
                     "(text) " +
@@ -76,13 +107,29 @@ public class MySQLTemplateDAO implements TemplateDAO
     }
 
     @Override
-    public boolean deleteTemplate(int template_id) {
+    public boolean deleteTemplate(Template template) {
         try(DBConnector dbConnector = new DBConnector()){
             dbConnector.executeUpdate("DELETE FROM templates " +
-                    "WHERE template_id=\'" + template_id +"\';"
+                    "WHERE template_id=\'" + template.getTemplate_id() +"\';"
             );
         } catch (SQLException e){
             LOGGER.error("Can not delete template");
+            LOGGER.error(e);
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public boolean updateTemplate(Template template) {
+        try (DBConnector dbConnector = new DBConnector()) {
+            dbConnector.executeUpdate("UPDATE templates " +
+                    "SET template_id=" + template.getTemplate_id() + "," +
+                    "text=\'" + template.getText() + "\' " +
+                    "WHERE template_id=" + template.getTemplate_id() + ";"
+            );
+        } catch (SQLException e) {
+            LOGGER.error("Can not update template");
             LOGGER.error(e);
             return false;
         }

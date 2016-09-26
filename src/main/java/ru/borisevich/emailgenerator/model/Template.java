@@ -7,6 +7,11 @@ public class Template {
     int template_id;
     String text;
 
+    public Template(int template_id, String text) {
+        this.template_id = template_id;
+        this.text = text;
+    }
+
     public int getTemplate_id() {
         return template_id;
     }

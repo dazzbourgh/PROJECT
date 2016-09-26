@@ -14,12 +14,14 @@ C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\mod
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\model\Email.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\servlets\EditAddressesServlet.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\db\mysql\MySQLTemplateDAO.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\servlets\EditTemplatesServlet.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\handlers\LogTag.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\servlets\AddAddressServlet.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\test\TestGenerator.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\servlets\EditAddressesLoaderServlet.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\db\EmailDAO.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\servlets\RegisterServlet.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\servlets\AbstractTemplateServlet.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\functional\AuthTokenContainer.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\functional\Generator.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\filters\AuthFilter.java
@@ -27,5 +29,7 @@ C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\db\
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\servlets\GenerationFormLoaderServlet.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\db\mysql\MySQLAddressDAO.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\db\AddressDAO.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\servlets\AddTemplateServlet.java
+C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\servlets\EditTemplatesLoaderServlet.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\servlets\GenerateServlet.java
 C:\Users\Leonid\Documents\PROJECT\src\main\java\ru\borisevich\emailgenerator\servlets\LoginServlet.java
