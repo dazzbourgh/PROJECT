@@ -12,7 +12,7 @@
 
     </head>
     <body>
-    <div class="container vertical-center bg-blue">
+    <div class="vertical-center bg-blue">
                 <div class="form-group well bg-white" align="center">
         <h1>${menuLabelHeader}</h1>
 

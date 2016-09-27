@@ -1,3 +1,4 @@
+ru\borisevich\emailgenerator\servlets\HeaderMenuServlet.class
 ru\borisevich\emailgenerator\db\mysql\MySQLEmailDAO.class
 ru\borisevich\emailgenerator\servlets\LoginServlet.class
 ru\borisevich\emailgenerator\model\User.class

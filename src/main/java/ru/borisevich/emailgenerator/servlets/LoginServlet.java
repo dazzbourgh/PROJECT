@@ -53,7 +53,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if (checkUserCorrect(req)) {
-            req.getRequestDispatcher("/menu.jsp").forward(req, resp);
+            req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
         } else {
             req.getRequestDispatcher("/login.jsp").forward(req, resp);
         }

@@ -14,7 +14,7 @@
     </head>
     <body>
     <dz:log />
-        <div class="container vertical-center bg-blue">
+        <div class="vertical-center bg-blue">
             <div class="form-group well bg-white" align="center">
                 <fmt:message key="index.label.header" bundle="${lang}" var="header1" />
                 <h1>${header1}</h1>

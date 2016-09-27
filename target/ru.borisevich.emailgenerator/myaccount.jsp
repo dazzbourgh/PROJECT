@@ -12,7 +12,8 @@
 
     </head>
     <body>
-    <div class="container vertical-center bg-blue">
+    <jsp:directive.include file="header_top.jsp" />
+    <div class="vertical-center bg-blue">
                     <div class="form-group well bg-white" align="center">
         <h1>${myaccountLabelHeader}</h1>
 

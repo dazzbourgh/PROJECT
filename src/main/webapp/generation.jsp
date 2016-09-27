@@ -15,8 +15,10 @@
             </style>
     </head>
     <body>
-    <div class="container vertical-center bg-blue">
-                <div class="form-group well bg-white" align="center">
+
+    <jsp:directive.include file="header_top.jsp" />
+    <div class="vertical-center bg-blue">
+    <div class="form-group well bg-white" align="center">
         <h1>${generationHeader}</h1>
 
         <form action="generateServlet" method="GET">
@@ -49,6 +51,6 @@
                     <red>${Error}</red>
         </c:if>
         </div>
-        </div>
+    </div>
     </body>
 </html>
