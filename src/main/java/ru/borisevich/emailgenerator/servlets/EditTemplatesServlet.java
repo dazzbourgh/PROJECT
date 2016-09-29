@@ -28,6 +28,16 @@ public class EditTemplatesServlet extends AbstractTemplateServlet {
         TemplateDAO templateDAO = (TemplateDAO) req.getServletContext().getAttribute(DbInitListener.TEMPLATE_DAO);
         int i = Integer.parseInt(req.getParameter("templateQuantity").toString());
         for (int j = 0; j < i; j++) {
+            if (req.getParameter("delete" + j) != null) {
+                templateDAO.deleteTemplate(templateDAO.getById(
+                        Integer.parseInt(
+                                req.getParameter("template_id" + j)
+                                        .toString()
+                        )
+                ));
+                req.getRequestDispatcher("/editTemplatesLoader").forward(req, resp);
+                return;
+            }
             if (!templateDAO.updateTemplate(new Template(
                     Integer.parseInt(req.getParameter("template_id" + j)),
                     req.getParameter("text" + j)

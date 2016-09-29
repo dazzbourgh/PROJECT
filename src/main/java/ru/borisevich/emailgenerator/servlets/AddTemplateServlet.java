@@ -26,18 +26,18 @@ public class AddTemplateServlet extends AbstractTemplateServlet{
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        if(req.getAttribute("text") == null){
+        if(req.getParameter("newTemplate") == null){
             req.setAttribute("templateError", "Enter template text");
             req.getRequestDispatcher("/editTemplatesLoader").forward(req, resp);
             return;
         }
-        String text = req.getAttribute("text").toString();
+        String text = req.getParameter("newTemplate").toString();
         if(!this.checkTemplateCorrect(text)){
             req.setAttribute("templateError", "Template missing keywords");
             req.getRequestDispatcher("/editTemplatesLoader").forward(req, resp);
             return;
         }
-        TemplateDAO templateDAO = (TemplateDAO) req.getServletContext().getAttribute(DbInitListener.ADDRESS_DAO);
+        TemplateDAO templateDAO = (TemplateDAO) req.getServletContext().getAttribute(DbInitListener.TEMPLATE_DAO);
         templateDAO.insertTemplate(new Template(0, text));
         req.getRequestDispatcher("/editTemplatesLoader").forward(req, resp);
     }

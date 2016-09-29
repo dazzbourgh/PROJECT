@@ -17,6 +17,18 @@ import java.util.Random;
 public class MySQLTemplateDAO implements TemplateDAO
 {
     private static final Logger LOGGER = Logger.getLogger(MySQLTemplateDAO.class.getName());
+
+    private void checkQuotes(Template template){
+        String text = template.getText();
+        while(text.indexOf("\'") > -1){
+            text = text.replaceFirst("\'", "\\\'");
+        }
+        while(text.indexOf("\"") > -1){
+            text = text.replaceFirst("\"", "\\\"");
+        }
+        template.setText(text);
+    }
+
     @Override
     public Template getRandomTemplate() {
         int total = 0;
@@ -93,10 +105,11 @@ public class MySQLTemplateDAO implements TemplateDAO
 
     @Override
     public boolean insertTemplate(Template template) {
+        checkQuotes(template);
         try(DBConnector dbConnector = new DBConnector()){
             dbConnector.executeUpdate("INSERT INTO templates " +
                     "(text) " +
-                    "VALUES (\'" + template +"\');"
+                    "VALUES (\'" + template.getText() +"\');"
             );
         } catch (SQLException e){
             LOGGER.error("Can not insert template");
@@ -122,6 +135,7 @@ public class MySQLTemplateDAO implements TemplateDAO
 
     @Override
     public boolean updateTemplate(Template template) {
+        checkQuotes(template);
         try (DBConnector dbConnector = new DBConnector()) {
             dbConnector.executeUpdate("UPDATE templates " +
                     "SET template_id=" + template.getTemplate_id() + "," +

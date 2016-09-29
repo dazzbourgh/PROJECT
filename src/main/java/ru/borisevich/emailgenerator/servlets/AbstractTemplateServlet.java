@@ -15,6 +15,6 @@ public class AbstractTemplateServlet extends HttpServlet{
                 return false;
             }
         }
-        return false;
+        return true;
     }
 }
