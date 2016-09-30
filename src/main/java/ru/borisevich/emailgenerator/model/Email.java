@@ -4,8 +4,17 @@ import java.util.Date;
 
 public class Email{
     private String address;
+    private String subject;
     private String text;
     private Date date;
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
 
     public Date getDate() { return date; }
 

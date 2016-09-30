@@ -23,7 +23,15 @@
 
         <form action="generateServlet" method="GET">
             <c:out value="${generationLabelTrackInfo}:" /><br>
-            <input type="text" name="trackInfo"/><br/>
+            ${generationLabelAuthor}: <input type="text" name="author" /><br>
+            ${generationLabelTitle}: <input type="text" name="title" /><br>
+            ${generationLabelStyle}: <input type="text" name="style" /><br>
+            ${generationLabelBpm}: <input type="text" name="bpm" /><br>
+            ${generationLabelLink}: <input type="text" name="link" /><br>
+            ${generationLabelName}: <input type="text" name="name" /><br>
+            ${generationLabelTrackInfo}:<br>
+            <textarea name="trackInfo" rows="10" cols="30"></textarea>
+            <br>
             <c:forEach var="par" items="${addressList}">
                 <input type="checkbox" name="address" value="${par.getName()}" />
                 <c:out value="${par.getName()}"/>
@@ -33,9 +41,9 @@
         </form>
 
         <form action="sendServlet" method="POST">
-            Login: <br>
+            ${generationLabelLogin}: <br>
             <input type="text" class="text-margin" name="emailUsername"/><br/>
-            Password: <br>
+            ${generationLabelPassword}: <br>
             <input type="password" class="text-margin" name="emailPassword"/><br/>
             <input type="submit" class="btn btn-default btn-margin" value="${sendButton}"/>
         </form>

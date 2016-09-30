@@ -55,7 +55,7 @@ public class MySQLTemplateDAO implements TemplateDAO
                     rs.getInt("template_id"),
                     rs.getString("text")
             );
-            LOGGER.debug("Template is: " + returnValue);
+            LOGGER.debug("Template is: " + returnValue.getText());
             return returnValue;
         } catch (SQLException e){
             LOGGER.error("Can't get template or extract text");

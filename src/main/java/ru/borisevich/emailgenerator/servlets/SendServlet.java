@@ -32,12 +32,12 @@ public class SendServlet extends HttpServlet{
             req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
             return;
         }
-        if(req.getParameter("emailUsername") == null){
+        if(req.getParameter("emailUsername").toString().equals("")){
             req.setAttribute("Error", "Enter username");
             req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
             return;
         }
-        if(req.getParameter("emailPassword") == null){
+        if(req.getParameter("emailPassword").toString().equals("")){
             req.setAttribute("Error", "Enter password");
             req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
             return;
@@ -54,8 +54,8 @@ public class SendServlet extends HttpServlet{
 
         try {
             email.setFrom(username + "@gmail.com");
-            email.setSubject("TestMail");
             for (Email e : emailList) {
+                email.setSubject(e.getSubject());
                 email.setMsg(e.getText());
                 email.addTo(e.getAddress());
                 email.send();

@@ -18,7 +18,7 @@
     <jsp:directive.include file="header_top.jsp" />
     <div class="vertical-center bg-blue">
     <div class="form-group well bg-white" align="center">
-        <h1>${headerEditAddresses}</h1>
+        <h1>${headerEditTemplates}</h1>
 
         <form action="editTemplates" method="POST">
             <c:set var="i" value="${0}" />
@@ -26,7 +26,7 @@
                 <input type="hidden" name="template_id${i}" value="${par.getTemplate_id()}"/>
                 <textarea rows="10" cols="30" class="text-margin" name="text${i}">${par.getText()}</textarea>
                 <br>
-                <input type="submit" name="delete${i}" class="btn btn-default btn-margin" value="Delete" />
+                <input type="submit" name="delete${i}" class="btn btn-default btn-margin" value="${deleteButton}" />
                 <c:set var="i" value="${i+1}" />
                 <br>
             </c:forEach>
@@ -37,10 +37,10 @@
             </c:if>
         </form>
         <br>
-        <c:out value="Add new template:" />
+        <c:out value="${addNewTemplate}:" />
         <br>
         <form action="addTemplate" method="POST">
-            <textarea rows="10" cols="30" class="text-margin" name="newTemplate">Enter template...</textarea>
+            <textarea rows="10" cols="30" class="text-margin" name="newTemplate"></textarea>
             <br>
             <input type="submit" class="btn btn-default btn-margin " value="${addButton}"/>
         </form>

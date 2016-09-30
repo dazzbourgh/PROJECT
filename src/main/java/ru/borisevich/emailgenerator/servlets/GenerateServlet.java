@@ -22,38 +22,44 @@ import java.util.List;
 @WebServlet("/generateServlet")
 public class GenerateServlet extends HttpServlet {
     private static final Logger LOGGER = Logger.getLogger(GenerateServlet.class.getName());
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        AddressDAO addressDAO = (AddressDAO)req.getServletContext().getAttribute(DbInitListener.ADDRESS_DAO);
-        if(req.getParameter("trackInfo") == null){
-            req.setAttribute("Error", "Please, provide track info.");
+        AddressDAO addressDAO = (AddressDAO) req.getServletContext().getAttribute(DbInitListener.ADDRESS_DAO);
+        if (req.getParameter("author").toString().equals("") ||
+                req.getParameter("title").toString().equals("") ||
+                req.getParameter("style").toString().equals("") ||
+                req.getParameter("bpm").toString().equals("") ||
+                req.getParameter("link").toString().equals("") ||
+                req.getParameter("name").toString().equals("") ||
+                req.getParameter("trackInfo").toString().equals("")) {
+            req.setAttribute("Error", "Please, fill all fields.");
             req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
             return;
         }
-        if(req.getParameterValues("address") == null){
+        if (req.getParameterValues("address") == null) {
             req.setAttribute("Error", "Please, choose recipients.");
             req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
             return;
         }
         List<Email> emailList;
         List<Address> addressList = new ArrayList<>();
-        String trackInfoString = req.getParameter("trackInfo");
         String[] addressNames = req.getParameterValues("address");
 
-        for(String s : addressNames){
+        for (String s : addressNames) {
             LOGGER.debug("Address to find: " + s);
             addressList.add(addressDAO.findByName(s));
         }
         Address[] addresses = new Address[addressList.size()];
         addressList.toArray(addresses);
-        LOGGER.debug("Address 0: " + addresses[0]);
+        LOGGER.debug("Address 0: " + addresses[0].getAddress());
         Generator generator = new Generator();
         try {
-            emailList = generator.generateMails(addresses, trackInfoString);
+            emailList = generator.generateMails(addresses, req);
             req.getSession().setAttribute("emailList", emailList);
             LOGGER.debug("FIRST EMAIL: " + emailList.get(0).getText());
-        } catch (NullPointerException e){
-            LOGGER.error("Error during generation: null pointer exception");
+        } catch (IllegalArgumentException e) {
+            LOGGER.error("Error during generation: illegal template");
         }
         req.getRequestDispatcher("/generationFormLoader").forward(req, resp);
     }

@@ -36,7 +36,7 @@ public class TestGenerator {
     public void destroy(){
         new MySQLTemplateDAO().deleteTemplate(new Template(0, ""));
     }
-
+/*
     @Test
     public void test(){
         String trackInfo = "AUTHOR: dazzbourgh;TITLE: testTitle;TARGET: test;INFO: some info;STYLE: house;BPM: 128;LINK: some link;NAME: Leonid";
@@ -46,4 +46,5 @@ public class TestGenerator {
         Email e = new Generator().generateMails(addressList.toArray(a), trackInfo).get(0);
         System.out.println(e.getText());
     }
+*/
 }
