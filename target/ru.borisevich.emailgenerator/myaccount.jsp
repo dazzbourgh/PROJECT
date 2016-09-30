@@ -11,10 +11,10 @@
                         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     </head>
-    <body>
+    <body class="bg-blue">
     <jsp:directive.include file="header_top.jsp" />
     <div class="vertical-center bg-blue">
-                    <div class="form-group well bg-white" align="center">
+    <div class="form-group well bg-white" align="center" style="text-align: left;">
         <h1>${myaccountLabelHeader}</h1>
 
             <c:out value="${myaccountLabelEmailHistory}:" /><br>

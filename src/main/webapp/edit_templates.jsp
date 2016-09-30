@@ -14,7 +14,7 @@
             p    {color: red;}
         </style>
     </head>
-    <body>
+    <body class="bg-blue">
     <jsp:directive.include file="header_top.jsp" />
     <div class="vertical-center bg-blue">
     <div class="form-group well bg-white" align="center">

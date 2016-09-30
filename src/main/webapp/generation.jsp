@@ -14,21 +14,23 @@
             red    {color: red;}
             </style>
     </head>
-    <body>
+    <body class="bg-blue">
 
     <jsp:directive.include file="header_top.jsp" />
     <div class="vertical-center bg-blue">
     <div class="form-group well bg-white" align="center">
         <h1>${generationHeader}</h1>
 
+
         <form action="generateServlet" method="GET">
             <c:out value="${generationLabelTrackInfo}:" /><br>
-            ${generationLabelAuthor}: <input type="text" name="author" /><br>
-            ${generationLabelTitle}: <input type="text" name="title" /><br>
-            ${generationLabelStyle}: <input type="text" name="style" /><br>
-            ${generationLabelBpm}: <input type="text" name="bpm" /><br>
-            ${generationLabelLink}: <input type="text" name="link" /><br>
-            ${generationLabelName}: <input type="text" name="name" /><br>
+            ${generationLabelAuthor}:<br> <input type="text" name="author" /><br>
+            ${generationLabelTitle}: <br> <input type="text" name="title" /> <br>
+            ${generationLabelStyle}: <br> <input type="text" name="style" /> <br>
+            ${generationLabelBpm}:   <br> <input type="text" name="bpm" />   <br>
+            ${generationLabelLink}:  <br> <input type="text" name="link" />  <br>
+            ${generationLabelName}:  <br> <input type="text" name="name" />  <br>
+
             ${generationLabelTrackInfo}:<br>
             <textarea name="trackInfo" rows="10" cols="30"></textarea>
             <br>

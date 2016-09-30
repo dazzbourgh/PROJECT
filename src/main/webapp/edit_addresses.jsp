@@ -12,7 +12,7 @@
                                         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     </head>
-    <body>
+    <body class="bg-blue">
     <jsp:directive.include file="header_top.jsp" />
     <div class="vertical-center bg-blue">
                 <div class="form-group well bg-white" align="center">
