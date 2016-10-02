@@ -9,8 +9,15 @@ import ru.borisevich.emailgenerator.model.Template;
 import javax.servlet.http.HttpServletRequest;
 import java.util.*;
 
+/**
+ * Generator of emails. Creates text by replacing words in templates,
+ * then wraps it into {@code Email}.
+ */
 public class Generator {
     private static final Logger LOGGER = Logger.getLogger(Generator.class);
+    /**
+     * List of necessary keywords, which must be presented in every mail.
+     */
     public final static String[] KEYWORDS = {
             "INFO",
             "NAME",
@@ -21,10 +28,19 @@ public class Generator {
             "LINK"
     };
 
+    /**
+     * Empty constructor.
+     */
     public Generator() {
 
     }
 
+    /**
+     * Converts request parameters into {@code LinkedHashMap} of keywords
+     * with their values.
+     * @param req
+     * @return {@code Map} of keyword / value pairs.
+     */
     private Map<String, String> processTrackInfo(HttpServletRequest req){
 
         Map<String, String> returnValue = new LinkedHashMap<String, String>();
@@ -39,10 +55,22 @@ public class Generator {
         return returnValue;
     }
 
+    /**
+     * Loads {@code Template} from database.
+     * @return {@code Template}
+     */
     private Template loadTemplate() {
         return new MySQLTemplateDAO().getRandomTemplate();
     }
 
+    /**
+     * Creates {@code List} of {@code Email}, based on template, keywords' values
+     * and receipents.
+     * @param addressees array of {@code Address} where to send messages.
+     * @param req
+     * @return {@code List} of {@code Email} with proper text, ready for sending.
+     * @throws IllegalArgumentException if any keyword is missing.
+     */
     public List<Email> generateMails(Address[] addressees, HttpServletRequest req) throws IllegalArgumentException {
         Map<String, String> trackInfo = processTrackInfo(req);
 

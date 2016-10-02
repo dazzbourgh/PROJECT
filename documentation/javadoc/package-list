@@ -1,0 +1,9 @@
+ru.borisevich.emailgenerator.db
+ru.borisevich.emailgenerator.db.mysql
+ru.borisevich.emailgenerator.filters
+ru.borisevich.emailgenerator.functional
+ru.borisevich.emailgenerator.handlers
+ru.borisevich.emailgenerator.listeners
+ru.borisevich.emailgenerator.model
+ru.borisevich.emailgenerator.servlets
+test

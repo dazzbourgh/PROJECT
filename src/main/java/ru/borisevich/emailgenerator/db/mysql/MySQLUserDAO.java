@@ -30,7 +30,6 @@ public class MySQLUserDAO implements UserDAO {
             if (rs.next()) {
                 return true;
             }
-            //dbConnector.close();
         } catch (SQLException e){
             LOGGER.debug("ERROR: can't connect to DB");
             return false;

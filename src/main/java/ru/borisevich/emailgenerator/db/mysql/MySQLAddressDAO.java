@@ -62,11 +62,6 @@ public class MySQLAddressDAO implements AddressDAO {
     }
 
     @Override
-    public boolean checkPassword(Address address) {
-        return false;
-    }
-
-    @Override
     public boolean insertAddress(Address address) {
         try (DBConnector dbConnector = new DBConnector()) {
             dbConnector.executeUpdate("INSERT INTO addresses " +

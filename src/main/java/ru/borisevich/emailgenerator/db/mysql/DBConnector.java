@@ -13,10 +13,22 @@ import org.apache.tomcat.jdbc.pool.PoolProperties;
  * Created by Leonid on 23.08.2016.
  */
 
+/**
+ * The {@code DBConnector} class is the element between classes
+ * that make requests and database. It stores all the necessary
+ * information to work with database, such as username, password,
+ * name of database, info about driver, pool etc.
+ *
+ * {@code AutoCloseable} is being implemented, so this class must
+ * be used in try-with-resource constructions, because connections
+ * must be returned to the pool after action is complete.
+ */
 public class DBConnector implements AutoCloseable{
     static final Logger LOGGER = Logger.getLogger(DBConnector.class.getName());
     // JDBC driver name and database URL
+    /**JDBC driver name*/
     static final String JDBC_DRIVER="com.mysql.jdbc.Driver";
+    /**Name of database*/
     static final String DB_URL="jdbc:mysql://localhost/emails";
 
     //  Database credentials
@@ -27,7 +39,14 @@ public class DBConnector implements AutoCloseable{
     private ResultSet resultSet;
     private Statement statement;
 
+    /**
+     * A pool of connections, which is being initialized
+     * in as static block below.
+     */
     private static PoolProperties poolProperties = new PoolProperties();
+    /**
+     * A source of connections.
+     */
     private static DataSource datasource;
 
     static {
@@ -43,6 +62,9 @@ public class DBConnector implements AutoCloseable{
 
     public DBConnector(){}
 
+    /**
+     * Pool initialization.
+     */
     public static void setPoolProperties(){
         poolProperties.setUrl(DB_URL);
         poolProperties.setDriverClassName(JDBC_DRIVER);
@@ -71,9 +93,19 @@ public class DBConnector implements AutoCloseable{
         datasource.setPoolProperties(poolProperties);
     }
 
-    public ResultSet executeStatement(String sqlCommand) throws SQLException, NullPointerException{
+    /**
+     * A method to get information from database, which is being stored in
+     * {@code ResultSet}. To access members in {@code ResultSet} use
+     * {@code next()} method.
+     *
+     * @param sqlCommand A query to database which should be executed
+     * @return A {@code ResultSet}, containing results of SQL query.
+     * @throws SQLException Being thrown by either {@code Connection},
+     *         {@code Statement} or {@code ResultSet} if
+     *         something goes wrong while accessing database.
+     */
+    public ResultSet executeStatement(String sqlCommand) throws SQLException{
         // Open a connection
-        //connection = DriverManager.getConnection(DB_URL, USER, PASS);
         connection = datasource.getConnection();
         // Execute SQL query
         statement = connection.createStatement();
@@ -82,6 +114,15 @@ public class DBConnector implements AutoCloseable{
         return resultSet;
     }
 
+    /**
+     * Same as {@code executeStatement()}, but for statements which modify
+     * the database (e.g. update, delete or add information).
+     * @param sqlCommand a {@code ResultSet}, containing results of SQL query.
+     * @return the row count for SQL Data Manipulation Language (DML) statements
+     * @throws SQLException Being thrown by either {@code Connection},
+     *         {@code Statement} or {@code ResultSet} if
+     *         something goes wrong while accessing database.
+     */
     public int executeUpdate(String sqlCommand) throws SQLException{
         connection = datasource.getConnection();
         // Execute SQL query
@@ -89,6 +130,10 @@ public class DBConnector implements AutoCloseable{
         return statement.executeUpdate(sqlCommand);
     }
 
+    /**
+     * Implements {@code AutoCloseable} to be used in try-with-resources
+     * constructions.
+     */
     @Override
     public void close(){
         try {

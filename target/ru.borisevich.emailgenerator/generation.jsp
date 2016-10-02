@@ -21,9 +21,7 @@
     <div class="form-group well bg-white" align="center">
         <h1>${generationHeader}</h1>
 
-
         <form action="generateServlet" method="GET">
-            <c:out value="${generationLabelTrackInfo}:" /><br>
             ${generationLabelAuthor}:<br> <input type="text" name="author" /><br>
             ${generationLabelTitle}: <br> <input type="text" name="title" /> <br>
             ${generationLabelStyle}: <br> <input type="text" name="style" /> <br>

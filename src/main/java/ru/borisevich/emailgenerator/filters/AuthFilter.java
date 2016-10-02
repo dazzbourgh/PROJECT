@@ -11,10 +11,21 @@ import java.io.IOException;
 /**
  * Created by Leonid on 28.08.2016.
  */
+
+/**
+ * Filters all the incoming requests to detect whether user
+ * is logged in or not. Depending on that it is being chosen
+ * which response user receives.
+ */
 @WebFilter(filterName = "AuthFilter",
 urlPatterns = {"/*"})
 public class AuthFilter implements Filter {
     private static final Logger LOGGER = Logger.getLogger(AuthFilter.class.getName());
+
+    /**
+     * List of resources which do not require authorization
+     * to access.
+     */
     private static final String[] ignoreList = {
             "register.jsp",
             "login.jsp",
@@ -23,14 +34,21 @@ public class AuthFilter implements Filter {
             "register",
             ""
     };
+
+    /**
+     * Checks if user is logged in.
+     * @param req
+     * @return true if user's token is presented in {@code AuthTokenContainer},
+     * false if not.
+     */
     private boolean checkAuth(HttpServletRequest req){
         Object token = req.getSession().getAttribute("token");
         if(token != null){
             if(AuthTokenContainer.getInstance().containsToken(token.toString()))
                 return true;
-            LOGGER.debug("User token = " + token);
+            LOGGER.info("User tried to login with token = " + token);
             for(Object o : AuthTokenContainer.getInstance().getAllTokens())
-                LOGGER.debug("Token in container = " + o);
+                LOGGER.info("Token in container = " + o);
         }
         return false;
     }
@@ -38,6 +56,15 @@ public class AuthFilter implements Filter {
 
     }
 
+    /**
+     * Filters requests: forwards to login page if unauthorized user
+     * tries to access content which is for authorized users only.
+     * @param servletRequest
+     * @param servletResponse
+     * @param filterChain
+     * @throws IOException
+     * @throws ServletException
+     */
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) servletRequest;
         for(String s : ignoreList){
@@ -47,7 +74,6 @@ public class AuthFilter implements Filter {
             }
         }
         if(!req.getRequestURI().equals("/ru.borisevich.emailgenerator/login")){
-            LOGGER.debug("requested URI: " + req.getRequestURI());
             if(!checkAuth(req))
                 req.getRequestDispatcher("/login.jsp").forward(servletRequest, servletResponse);
             else{

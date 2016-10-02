@@ -12,6 +12,11 @@ import javax.servlet.annotation.WebListener;
 /**
  * Created by Leonid on 22.09.2016.
  */
+
+/**
+ * Listener, which puts DAO objects into {@code ServletContext}
+ * on app creation.
+ */
 @WebListener
 public class DbInitListener implements ServletContextListener {
 

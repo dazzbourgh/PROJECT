@@ -14,7 +14,6 @@ import static org.junit.Assert.assertEquals;
  * Created by Leonid on 04.09.2016.
  */
 public class TestDBAddUser {
-    String username = "test_user";
 
     @Before
     public void setUp(){

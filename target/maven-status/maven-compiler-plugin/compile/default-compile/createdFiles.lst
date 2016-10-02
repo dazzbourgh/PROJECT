@@ -23,7 +23,6 @@ test\TestGenerator.class
 ru\borisevich\emailgenerator\servlets\RegisterServlet.class
 ru\borisevich\emailgenerator\servlets\GenerationFormLoaderServlet.class
 ru\borisevich\emailgenerator\servlets\LanguageChoiceServlet.class
-ru\borisevich\emailgenerator\functional\Sender.class
 ru\borisevich\emailgenerator\model\Email.class
 ru\borisevich\emailgenerator\model\Template.class
 ru\borisevich\emailgenerator\servlets\GenerateServlet.class
