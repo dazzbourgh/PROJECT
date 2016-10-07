@@ -3,6 +3,7 @@ package ru.borisevich.emailgenerator.model;
 import java.util.Date;
 
 public class Email{
+    private int email_id;
     private String address;
     private String subject;
     private String text;
@@ -10,6 +11,14 @@ public class Email{
 
     public String getSubject() {
         return subject;
+    }
+
+    public int getEmail_id() {
+        return email_id;
+    }
+
+    public void setEmail_id(int email_id) {
+        this.email_id = email_id;
     }
 
     public void setSubject(String subject) {

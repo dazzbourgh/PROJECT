@@ -18,7 +18,7 @@ import java.io.IOException;
  * which response user receives.
  */
 @WebFilter(filterName = "AuthFilter",
-urlPatterns = {"/*"})
+        urlPatterns = {"/*"})
 public class AuthFilter implements Filter {
     private static final Logger LOGGER = Logger.getLogger(AuthFilter.class.getName());
 
@@ -37,21 +37,23 @@ public class AuthFilter implements Filter {
 
     /**
      * Checks if user is logged in.
+     *
      * @param req
      * @return true if user's token is presented in {@code AuthTokenContainer},
      * false if not.
      */
-    private boolean checkAuth(HttpServletRequest req){
+    private boolean checkAuth(HttpServletRequest req) {
         Object token = req.getSession().getAttribute("token");
-        if(token != null){
-            if(AuthTokenContainer.getInstance().containsToken(token.toString()))
+        if (token != null) {
+            if (AuthTokenContainer.getInstance().containsToken(token.toString()))
                 return true;
             LOGGER.info("User tried to login with token = " + token);
-            for(Object o : AuthTokenContainer.getInstance().getAllTokens())
+            for (Object o : AuthTokenContainer.getInstance().getAllTokens())
                 LOGGER.info("Token in container = " + o);
         }
         return false;
     }
+
     public void init(FilterConfig filterConfig) throws ServletException {
 
     }
@@ -59,6 +61,7 @@ public class AuthFilter implements Filter {
     /**
      * Filters requests: forwards to login page if unauthorized user
      * tries to access content which is for authorized users only.
+     *
      * @param servletRequest
      * @param servletResponse
      * @param filterChain
@@ -67,23 +70,55 @@ public class AuthFilter implements Filter {
      */
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) servletRequest;
-        for(String s : ignoreList){
-            if(req.getRequestURI().equals("/ru.borisevich.emailgenerator/" + s)){
+
+        LOGGER.debug("checking auth");
+        if (!checkAuth(req)) {
+            LOGGER.debug("user not logged in");
+            for (String s : ignoreList) {
+                if (req.getRequestURI().equals("/ru.borisevich.emailgenerator/" + s)) {
+                    req.getRequestDispatcher("/" + s).forward(servletRequest, servletResponse);
+                    return;
+                }
+            }
+            if(req.getRequestURI().equals("/ru.borisevich.emailgenerator/login")) {
+                req.getRequestDispatcher("/login").forward(servletRequest, servletResponse);
+                return;
+            }
+        } else {
+            LOGGER.debug("user already logged in");
+            String[] s = req.getRequestURI().split("/");
+            if (("/" + s[s.length - 1]).equals("/login.jsp") ||
+                    ("/" + s[s.length - 1]).equals("/login")) {
+                req.getRequestDispatcher("/generationFormLoader").forward(servletRequest, servletResponse);
+                return;
+            } else {
+                if(s[s.length - 1].equals("ru.borisevich.emailgenerator")){
+                    req.getRequestDispatcher("/").forward(servletRequest, servletResponse);
+                    return;
+                }
+                req.getRequestDispatcher("/" + s[s.length - 1]).forward(servletRequest, servletResponse);
+                return;
+            }
+        }
+        /*for (String s : ignoreList) {
+            if (req.getRequestURI().equals("/ru.borisevich.emailgenerator/" + s)) {
                 req.getRequestDispatcher("/" + s).forward(servletRequest, servletResponse);
                 return;
             }
         }
-        if(!req.getRequestURI().equals("/ru.borisevich.emailgenerator/login")){
-            if(!checkAuth(req))
+        if (!req.getRequestURI().equals("/ru.borisevich.emailgenerator/login")) {
+            if (!checkAuth(req)) {
                 req.getRequestDispatcher("/login.jsp").forward(servletRequest, servletResponse);
-            else{
+                return;
+            } else {
                 String[] s = req.getRequestURI().split("/");
                 req.getRequestDispatcher("/" + s[s.length - 1]).forward(servletRequest, servletResponse);
+                return;
             }
-         }
-        else{
+        } else {
             req.getRequestDispatcher("/login").forward(servletRequest, servletResponse);
-        }
+            return;
+        }*/
     }
 
     public void destroy() {

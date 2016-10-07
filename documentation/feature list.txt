@@ -1,0 +1,11 @@
+1) user editing
+2) my account:
+	subject
+	date
+	may be grouping
+3) add database schema
+4) templates: shared or not?
+	random choice -> definite
+5) forward from login page if already logged in
+6) cookies, logout button
+7) alter email table to have subject and user table to have info about email address
